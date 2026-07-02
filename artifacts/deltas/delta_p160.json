@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE PULPIT. 159"],
+  "fixes": [
+    {"wrong": "vyacillation", "right": "vacillation"}
+  ],
+  "headings": [],
+  "italics": []
+}

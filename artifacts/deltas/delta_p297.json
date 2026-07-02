@@ -1,0 +1,16 @@
+{
+  "drop": ["296 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Soctettrs", "right": "Societies"},
+    {"wrong": "ageney", "right": "agency"},
+    {"wrong": "apostolie", "right": "apostolic"},
+    {"wrong": "whieh still", "right": "which still"},
+    {"wrong": "mueh", "right": "much"},
+    {"wrong": "gage in it. or Christian", "right": "gage in it. For Christian"},
+    {"wrong": "fainily", "right": "family"}
+  ],
+  "headings": [
+    {"text": "(d) Dorcas Societies.", "level": "h3"}
+  ],
+  "italics": []
+}

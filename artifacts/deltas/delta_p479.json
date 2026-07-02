@@ -1,0 +1,14 @@
+{
+  "drop": [
+    "478 THE PASTOR IN THE"
+  ],
+  "fixes": [
+    {"wrong": "his_ his", "right": "his his"},
+    {"wrong": "hes before him", "right": "lies before him"}
+  ],
+  "headings": [
+    {"text": "THE PRESBYTERY A MISSIONARY ORGANIZATION IN ITS OWN TERRITORY.", "level": "h2"},
+    {"text": "(a) The Territory of the Presbytery to be Regarded as its Special Missionary Field.", "level": "h3"}
+  ],
+  "italics": []
+}

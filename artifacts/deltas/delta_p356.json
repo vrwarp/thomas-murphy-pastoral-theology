@@ -1,0 +1,9 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH. 355"],
+  "fixes": [
+    {"wrong": "led to the eross", "right": "led to the cross"},
+    {"wrong": "gates always open. At", "right": "gates always open? At"}
+  ],
+  "headings": [],
+  "italics": []
+}

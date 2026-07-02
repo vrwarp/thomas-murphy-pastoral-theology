@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE CLOSET. 43"],
+  "fixes": [
+    {"wrong": "conse-eration", "right": "conse-cration"}
+  ],
+  "headings": [
+    {"text": "(b) THE GREATNESS OF THE WORK TO WHICH HE IS CALLED.", "level": "h3"}
+  ],
+  "italics": []
+}

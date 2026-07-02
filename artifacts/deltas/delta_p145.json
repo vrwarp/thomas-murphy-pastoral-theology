@@ -1,0 +1,9 @@
+{
+  "drop": ["144 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Iaussett", "right": "Faussett"},
+    {"wrong": "Encyclopzedia", "right": "Encyclopædia"}
+  ],
+  "headings": [],
+  "italics": ["Books of general reference", "Interpretation of Scripture", "Commentaries", "Genesis", "Exodus", "Leviticus", "Numbers"]
+}

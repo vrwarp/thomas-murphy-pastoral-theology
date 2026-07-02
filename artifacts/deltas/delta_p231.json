@@ -1,0 +1,9 @@
+{
+  "drop": ["230 THE PASTOR"],
+  "fixes": [
+    {"wrong": "ean be kept", "right": "can be kept"},
+    {"wrong": "‘This register", "right": "This register"}
+  ],
+  "headings": [],
+  "italics": []
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["BENEVOLENT WORK OF THE CHURCH. 439"],
+  "fixes": [
+    {"wrong": "<A fact of his own minis-", "right": "A fact of his own minis-"},
+    {"wrong": "J knew not", "right": "I knew not"},
+    {"wrong": "hay-", "right": "hav-"}
+  ],
+  "headings": [],
+  "italics": []
+}

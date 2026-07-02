@@ -1,0 +1,13 @@
+{
+  "drop": ["INDEX. 503"],
+  "fixes": [
+    {"wrong": "attainable, ,357", "right": "attainable, 357"}
+  ],
+  "headings": [
+    {"text": "E.", "level": "h2"},
+    {"text": "F.", "level": "h2"},
+    {"text": "G.", "level": "h2"},
+    {"text": "H.", "level": "h2"}
+  ],
+  "italics": []
+}

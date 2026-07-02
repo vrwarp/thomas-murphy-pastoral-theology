@@ -1,0 +1,9 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH. 327"],
+  "fixes": [
+    {"wrong": "‘The regenerated", "right": "The regenerated"},
+    {"wrong": "progress 1s the normal state", "right": "progress is the normal state"}
+  ],
+  "headings": [],
+  "italics": []
+}

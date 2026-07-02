@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE STUDY. 147"],
+  "fixes": [
+    {"wrong": "All this inust", "right": "All this must"}
+  ],
+  "headings": [
+    {"text": "NEWSPAPERS AND OTHER PERIODICALS.", "level": "h2"}
+  ],
+  "italics": []
+}

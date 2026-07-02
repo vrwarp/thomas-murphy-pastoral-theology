@@ -1,0 +1,9 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH. 345", "44"],
+  "fixes": [
+    {"wrong": "acccording", "right": "according"},
+    {"wrong": "<A true revival", "right": "A true revival"}
+  ],
+  "headings": [],
+  "italics": []
+}

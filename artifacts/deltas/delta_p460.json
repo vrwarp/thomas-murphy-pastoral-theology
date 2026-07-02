@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE SESSION. 459"],
+  "fixes": [
+    {"wrong": "5. Excuses for absence from last", "right": "3. Excuses for absence from last"}
+  ],
+  "headings": [
+    {"text": "DISCIPLINE.", "level": "h2"}
+  ],
+  "italics": []
+}

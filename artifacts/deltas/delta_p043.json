@@ -1,0 +1,9 @@
+{
+  "drop": ["42 THE PASTOR"],
+  "fixes": [
+    {"wrong": "yain", "right": "vain"},
+    {"wrong": "ficld", "right": "field"}
+  ],
+  "headings": [],
+  "italics": ["lights", "teachers", "witnesses"]
+}

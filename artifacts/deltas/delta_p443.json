@@ -1,0 +1,12 @@
+{
+  "drop": ["442 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "swell. the", "right": "swell the"},
+    {"wrong": "Chureh", "right": "Church"},
+    {"wrong": "_ blessing", "right": "blessing"}
+  ],
+  "headings": [
+    {"text": "SYSTEMATIC GIVING.", "level": "h2"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,15 @@
+{
+  "drop": ["40 THE PASTOR"],
+  "fixes": [
+    {"wrong": "emphatie", "right": "emphatic"},
+    {"wrong": "ineonsiderately", "right": "inconsiderately"},
+    {"wrong": "or\nGop", "right": "of God"},
+    {"wrong": "or Gop", "right": "OF GOD"},
+    {"wrong": "Iam", "right": "I am"}
+  ],
+  "headings": [
+    {"text": "IMPORTANCE OF EMINENT PIETY IN THE PASTOR.", "level": "h2"},
+    {"text": "(a) THE NAMES APPLIED TO MINISTERS IN THE WORD OF GOD.", "level": "h3"}
+  ],
+  "italics": ["pastor"]
+}

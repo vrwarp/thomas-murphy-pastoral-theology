@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE STUDY. 99"],
+  "fixes": [
+    {"wrong": "thorough system,", "right": "thorough system."}
+  ],
+  "headings": [
+    {"text": "THOROUGH SYSTEM.", "level": "h2"}
+  ],
+  "italics": []
+}

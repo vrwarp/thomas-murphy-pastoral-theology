@@ -1,0 +1,11 @@
+{
+  "drop": ["IN THE STUDY. 109"],
+  "fixes": [
+    {"wrong": "manister", "right": "minister"}
+  ],
+  "headings": [],
+  "italics": [
+    "When he is beforehand in the chief duties of his office the minister is always prepared for unexpected interruptions.",
+    "This practice will lead to far more being done, and also better done."
+  ]
+}

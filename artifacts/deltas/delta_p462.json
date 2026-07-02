@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE SESSION. 461"],
+  "fixes": [
+    {"wrong": "every chureh,", "right": "every church,"},
+    {"wrong": "too much east down", "right": "too much cast down"}
+  ],
+  "headings": [],
+  "italics": []
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["110 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Tt would impart", "right": "It would impart"}
+  ],
+  "headings": [
+    {"text": "INCESSANT STUDY OF THE BIBLE.", "level": "h2"}
+  ],
+  "italics": []
+}

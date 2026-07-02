@@ -1,0 +1,13 @@
+{
+  "drop": ["310 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "yantages", "right": "vantages"},
+    {"wrong": "ean easily take his place", "right": "can easily take his place"},
+    {"wrong": "‘There is less stiffness", "right": "There is less stiffness"},
+    {"wrong": "the ease that some one", "right": "the case that some one"},
+    {"wrong": "who are in the spirit of prayer ean", "right": "who are in the spirit of prayer can"},
+    {"wrong": "so that sometimes eyen the most devoted", "right": "so that sometimes even the most devoted"}
+  ],
+  "headings": [],
+  "italics": ["Occasionally some other person than the pastor should conduct the meeting.", "It is a good plan often to give an opportunity for voluntary remarks or prayer."]
+}

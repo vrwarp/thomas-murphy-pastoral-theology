@@ -1,0 +1,10 @@
+{
+  "drop": [
+    "RELATIONS TO OTHER DENOMINATIONS. 499"
+  ],
+  "fixes": [
+    {"wrong": ": munity", "right": "munity"}
+  ],
+  "headings": [],
+  "italics": []
+}

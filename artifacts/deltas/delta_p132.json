@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE STUDY. 131"],
+  "fixes": [
+    {"wrong": "1. Lt is not", "right": "1. It is not"},
+    {"wrong": "without rt.", "right": "without it."}
+  ],
+  "headings": [],
+  "italics": ["It is not an exaggeration to say that the Bible can be better understood through the aid of this knowledge than it can possibly be without it."]
+}

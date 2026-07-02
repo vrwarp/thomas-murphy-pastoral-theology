@@ -1,0 +1,8 @@
+{
+  "drop": ["SABBATH-SCHOOL. 399"],
+  "fixes": [
+    {"wrong": "inculeated", "right": "inculcated"}
+  ],
+  "headings": [],
+  "italics": []
+}

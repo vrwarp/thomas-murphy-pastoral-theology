@@ -1,0 +1,8 @@
+{
+  "drop": ["CHAPTER XI.", "THE PASTOR IN THE HIGHER COURTS OF THE", "CHURCH.", "471"],
+  "fixes": [
+    {"wrong": "‘These duties", "right": "These duties"}
+  ],
+  "headings": [],
+  "italics": []
+}

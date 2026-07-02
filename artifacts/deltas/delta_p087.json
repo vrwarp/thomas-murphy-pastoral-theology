@@ -1,0 +1,12 @@
+{
+  "drop": ["86 THE PASTOR"],
+  "fixes": [
+    {"wrong": "'This very thing", "right": "This very thing"},
+    {"wrong": "‘This knowledge", "right": "This knowledge"},
+    {"wrong": "Lhe pastor", "right": "The pastor"},
+    {"wrong": "espeeially", "right": "especially"},
+    {"wrong": "JT idelity", "right": "Fidelity"}
+  ],
+  "headings": [],
+  "italics": ["ministers must have the clearest knowledge of the way in which eminent piety may be reached", "The pastor has every possible motive for cultivating the graces of the Spirit"]
+}

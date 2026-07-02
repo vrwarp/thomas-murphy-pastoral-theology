@@ -1,0 +1,10 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH, 339"],
+  "fixes": [
+    {"wrong": "hin", "right": "him"}
+  ],
+  "headings": [
+    {"text": "(d) The Pastor to be Informed Who are Awakened.", "level": "h3"}
+  ],
+  "italics": []
+}

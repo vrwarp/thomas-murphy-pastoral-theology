@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE PULPIT. 209", "27"],
+  "fixes": [
+    {"wrong": "‘They will thus often prove", "right": "They will thus often prove"},
+    {"wrong": "‘Then\nthe vast interests", "right": "Then\nthe vast interests"}
+  ],
+  "headings": [],
+  "italics": ["The public prayer of the pastor should be comprehensive"]
+}

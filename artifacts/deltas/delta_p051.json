@@ -1,0 +1,9 @@
+{
+  "drop": ["50 THE PASTOR"],
+  "fixes": [
+    {"wrong": "intereourse", "right": "intercourse"},
+    {"wrong": "seeret", "right": "secret"}
+  ],
+  "headings": [],
+  "italics": []
+}

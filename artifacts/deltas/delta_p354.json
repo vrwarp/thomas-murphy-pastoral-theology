@@ -1,0 +1,9 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH. 353", "45"],
+  "fixes": [
+    {"wrong": "minutiee", "right": "minutiæ"},
+    {"wrong": "reeommend-", "right": "recommend-"}
+  ],
+  "headings": [],
+  "italics": []
+}

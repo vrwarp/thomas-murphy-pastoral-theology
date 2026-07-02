@@ -1,0 +1,9 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 301"],
+  "fixes": [
+    {"wrong": "said Mis. A", "right": "said Mrs. A"},
+    {"wrong": "unknown .", "right": "unknown"}
+  ],
+  "headings": [],
+  "italics": []
+}

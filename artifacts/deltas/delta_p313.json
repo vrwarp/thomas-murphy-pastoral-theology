@@ -1,0 +1,13 @@
+{
+  "drop": ["312 THE PASTOR IN TIE", "312"],
+  "fixes": [
+    {"wrong": "TIE", "right": "THE"},
+    {"wrong": "Besices", "right": "Besides"},
+    {"wrong": "‘Their", "right": "Their"},
+    {"wrong": "Seripture", "right": "Scripture"},
+    {"wrong": "prayer-mecting", "right": "prayer-meeting"},
+    {"wrong": "ean arrive", "right": "can arrive"}
+  ],
+  "headings": [],
+  "italics": ["Ladies of the congregation might send communications that could with great profit be read in the prayer-meeting.", "Spirited singing is an important aid to the prayer-meeting."]
+}

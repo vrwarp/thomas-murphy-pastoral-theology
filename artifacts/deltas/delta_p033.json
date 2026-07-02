@@ -1,0 +1,9 @@
+{
+  "drop": ["32 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "oo mueh", "right": "too much"},
+    {"wrong": "so high that it mani-\nifestly", "right": "so high that it manifestly"}
+  ],
+  "headings": [],
+  "italics": ["practicable", "too much should not be asked in treating of this subject"]
+}

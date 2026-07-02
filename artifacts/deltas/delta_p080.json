@@ -1,0 +1,14 @@
+{
+  "drop": ["IN THE CLOSET.", "a9"],
+  "fixes": [
+    {"wrong": "a9", "right": "79"},
+    {"wrong": "THe Pastor SHOULD CULTIVATE HIS PIETY BY", "right": "THE PASTOR SHOULD CULTIVATE HIS PIETY BY"},
+    {"wrong": "Preacuine TO HIMSELF.", "right": "PREACHING TO HIMSELF."},
+    {"wrong": "Tuat, therefore, which teachest anothier", "right": "Thou, therefore, which teachest another"},
+    {"wrong": "Tn your preparations", "right": "In your preparations"}
+  ],
+  "headings": [
+    {"text": "(d) THE PASTOR SHOULD CULTIVATE HIS PIETY BY PREACHING TO HIMSELF.", "level": "h3"}
+  ],
+  "italics": []
+}

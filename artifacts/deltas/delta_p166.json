@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE PULPIT. 165"],
+  "fixes": [
+    {"wrong": "it is.a very", "right": "it is a very"},
+    {"wrong": "bunt as it is divine", "right": "but as it is divine"},
+    {"wrong": "Ilustra-\ntions", "right": "Illustra-\ntions"}
+  ],
+  "headings": [],
+  "italics": []
+}

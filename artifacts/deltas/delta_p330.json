@@ -1,0 +1,8 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH. 329", "42"],
+  "fixes": [
+    {"wrong": "‘Then it is generally expected", "right": "Then it is generally expected"}
+  ],
+  "headings": [],
+  "italics": []
+}

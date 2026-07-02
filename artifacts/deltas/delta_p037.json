@@ -1,0 +1,9 @@
+{
+  "drop": ["36 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "not do todelay", "right": "not do to delay"},
+    {"wrong": "shopld", "right": "should"}
+  ],
+  "headings": [],
+  "italics": []
+}

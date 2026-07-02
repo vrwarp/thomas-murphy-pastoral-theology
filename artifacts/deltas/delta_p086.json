@@ -1,0 +1,13 @@
+{
+  "drop": ["IN THE CLOSET. 85"],
+  "fixes": [
+    {"wrong": "‘These are some", "right": "These are some"},
+    {"wrong": "0. Lhe pastor has no counselor whom he ordinarily", "right": "5. The pastor has no counselor whom he ordinarily"},
+    {"wrong": "hikes to consult about his own soul.", "right": "likes to consult about his own soul."},
+    {"wrong": "assistance of any.", "right": "assistance of any,"}
+  ],
+  "headings": [
+    {"text": "HELPS TO THE PIETY OF THE PASTOR.", "level": "h2"}
+  ],
+  "italics": ["The pastor has no counselor whom he ordinarily likes to consult about his own soul."]
+}

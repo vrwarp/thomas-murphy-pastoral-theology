@@ -1,0 +1,16 @@
+{
+  "drop": ["200 THE PASTOR"],
+  "fixes": [
+    {"wrong": "tothem?", "right": "to them?"},
+    {"wrong": "ean we feel", "right": "can we feel"},
+    {"wrong": "direet sympathy", "right": "direct sympathy"},
+    {"wrong": "sueh preaching", "right": "such preaching"},
+    {"wrong": "churehes.", "right": "churches."},
+    {"wrong": "Tt is true", "right": "It is true"},
+    {"wrong": "and _pro-", "right": "and pro-"}
+  ],
+  "headings": [
+    {"text": "(d) Aiming Directly for Conversions in Preaching.", "level": "h3"}
+  ],
+  "italics": []
+}

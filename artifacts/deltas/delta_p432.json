@@ -1,0 +1,10 @@
+{
+  "drop": [
+    "BENEVOLENT WORK OF THE CHURCH. 431"
+  ],
+  "fixes": [
+    {"wrong": "barbarisin", "right": "barbarism"}
+  ],
+  "headings": [],
+  "italics": []
+}

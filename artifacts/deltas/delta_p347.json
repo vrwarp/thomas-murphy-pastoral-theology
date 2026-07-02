@@ -1,0 +1,10 @@
+{
+  "drop": ["346 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "broughit", "right": "brought"}
+  ],
+  "headings": [
+    {"text": "(h) CARE FOR YOUNG CONVERTS.", "level": "h3"}
+  ],
+  "italics": []
+}

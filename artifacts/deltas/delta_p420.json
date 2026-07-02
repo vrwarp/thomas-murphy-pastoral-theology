@@ -1,0 +1,11 @@
+{
+  "drop": ["SABBATH-SCHOOL. 419"],
+  "fixes": [
+    {"wrong": "cireumstances", "right": "circumstances"},
+    {"wrong": "THe Pasror’s BrBLE-ciass", "right": "The Pastor's Bible-Class"}
+  ],
+  "headings": [
+    {"text": "(c) The Pastor's Bible-Class.", "level": "h3"}
+  ],
+  "italics": []
+}

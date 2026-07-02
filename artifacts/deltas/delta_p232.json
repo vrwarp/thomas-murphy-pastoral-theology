@@ -1,0 +1,9 @@
+{
+  "drop": ["7 IN HIS PERSONAL PAROCHIAL WORK. 231"],
+  "fixes": [
+    {"wrong": "it ina haphazard", "right": "it in a haphazard"},
+    {"wrong": "ean be saved", "right": "can be saved"}
+  ],
+  "headings": [],
+  "italics": ["three times a year"]
+}

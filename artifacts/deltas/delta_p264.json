@@ -1,0 +1,11 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 263"],
+  "fixes": [
+    {"wrong": "‘On almost", "right": "On almost"},
+    {"wrong": "Tn the work", "right": "In the work"}
+  ],
+  "headings": [
+    {"text": "CIRCULATING BOOKS AND TRACTS.", "level": "h2"}
+  ],
+  "italics": ["preached at every funeral"]
+}

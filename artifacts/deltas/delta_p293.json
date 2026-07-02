@@ -1,0 +1,14 @@
+{
+  "drop": ["292 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "individals", "right": "individuals"},
+    {"wrong": "vast. issues", "right": "vast issues"},
+    {"wrong": "unetion", "right": "unction"},
+    {"wrong": "instrue-\ntions", "right": "instruc-\ntions"},
+    {"wrong": "chureh’s", "right": "church’s"}
+  ],
+  "headings": [
+    {"text": "(b) Pastors' Aids.", "level": "h3"}
+  ],
+  "italics": []
+}

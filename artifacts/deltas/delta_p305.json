@@ -1,0 +1,11 @@
+{
+  "drop": ["304 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "imaptly", "right": "inaptly"},
+    {"wrong": "In’ a measure", "right": "In a measure"},
+    {"wrong": "away; It in-", "right": "away; it in-"},
+    {"wrong": "uncetion", "right": "unction"}
+  ],
+  "headings": [],
+  "italics": ["The prayer-meeting should be regarded as an index of the piety of the Church."]
+}

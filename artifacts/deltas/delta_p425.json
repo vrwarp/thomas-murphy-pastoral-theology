@@ -1,0 +1,11 @@
+{
+  "drop": ["424 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Rey. Dr.", "right": "Rev. Dr."},
+    {"wrong": "Then, Ist.", "right": "Then, 1st."},
+    {"wrong": "3d. Itis an old family", "right": "3d. It is an old family"},
+    {"wrong": "Eph. 11.15", "right": "Eph. iii. 15"}
+  ],
+  "headings": [],
+  "italics": []
+}

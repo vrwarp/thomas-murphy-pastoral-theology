@@ -1,0 +1,12 @@
+{
+  "drop": [
+    "ITS NATURE AND IMPORTANCE. 15"
+  ],
+  "fixes": [
+    {"wrong": "It wassoat the first.", "right": "It was so at the first."}
+  ],
+  "headings": [
+    {"text": "HISTORY OF PASTORAL THEOLOGY.", "level": "h2"}
+  ],
+  "italics": []
+}

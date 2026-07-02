@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE CLOSET. 81", "IL"],
+  "fixes": [
+    {"wrong": "“Tt is a cold", "right": "“It is a cold"},
+    {"wrong": "vent ia", "right": "vent in"}
+  ],
+  "headings": [],
+  "italics": []
+}

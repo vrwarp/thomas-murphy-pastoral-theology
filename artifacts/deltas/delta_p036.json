@@ -1,0 +1,9 @@
+{
+  "drop": ["ITS NATURE AND IMPORTANCE. 35"],
+  "fixes": [
+    {"wrong": "‘The interests", "right": "The interests"},
+    {"wrong": "‘This is eminently", "right": "This is eminently"}
+  ],
+  "headings": [],
+  "italics": ["with the full purpose of putting it into practice"]
+}

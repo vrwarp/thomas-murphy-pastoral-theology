@@ -1,0 +1,9 @@
+{
+  "drop": ["204 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Jnstances", "right": "Instances"},
+    {"wrong": "Iam", "right": "I am"}
+  ],
+  "headings": [],
+  "italics": []
+}

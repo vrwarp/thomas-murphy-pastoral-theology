@@ -1,0 +1,9 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 225", "29"],
+  "fixes": [
+    {"wrong": "ina large", "right": "in a large"},
+    {"wrong": "‘The resulting", "right": "The resulting"}
+  ],
+  "headings": [],
+  "italics": []
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["522 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "522 THE PASTOR IN THE", "right": "322 THE PASTOR IN THE"}
+  ],
+  "headings": [
+    {"text": "VOLUNTARY ASSOCIATIONS.", "level": "h2"}
+  ],
+  "italics": []
+}

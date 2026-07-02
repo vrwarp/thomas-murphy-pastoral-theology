@@ -1,0 +1,8 @@
+{
+  "drop": ["208 THE PASTOR"],
+  "fixes": [
+    {"wrong": "acceptance? ‘This sense", "right": "acceptance? This sense"}
+  ],
+  "headings": [],
+  "italics": ["Public prayer should receive its tone and spirit from a sense of the divine presence."]
+}

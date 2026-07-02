@@ -1,0 +1,11 @@
+{
+  "drop": ["314 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "(4) Bible", "right": "(b) Bible"},
+    {"wrong": "(¢) Prayers", "right": "(c) Prayers"},
+    {"wrong": "(jf) Subjects", "right": "(f) Subjects"},
+    {"wrong": "cessive mectings", "right": "cessive meetings"}
+  ],
+  "headings": [],
+  "italics": ["A sense of the Divine Presence should be cherished in every meeting"]
+}

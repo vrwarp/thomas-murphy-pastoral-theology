@@ -1,0 +1,12 @@
+{
+  "drop": ["168 THE PASTOR"],
+  "fixes": [
+    {"wrong": "erucified", "right": "crucified"},
+    {"wrong": "‘beginning at Moses", "right": "“beginning at Moses"},
+    {"wrong": "himself.’", "right": "himself.”"},
+    {"wrong": "ourselyes", "right": "ourselves"},
+    {"wrong": "And _ still", "right": "And still"}
+  ],
+  "headings": [],
+  "italics": []
+}

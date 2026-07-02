@@ -1,0 +1,12 @@
+{
+  "drop": ["164 THE PASTOR"],
+  "fixes": [
+    {"wrong": "scarecly", "right": "scarcely"},
+    {"wrong": "themes: of", "right": "themes of"},
+    {"wrong": "‘The important", "right": "The important"}
+  ],
+  "headings": [
+    {"text": "(b) Nothing but the Word to be Preached.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,13 @@
+{
+  "drop": ["480 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Ir irs own TERRITORY IS NoT CULTIVATED BY", "right": "IF ITS OWN TERRITORY IS NOT CULTIVATED BY"},
+    {"wrong": "PRESBYTERY, IT WILL NOT BE BY OTHERS,", "right": "PRESBYTERY, IT WILL NOT BE BY OTHERS."},
+    {"wrong": "Constant OuTLOOK ror NEw Locauities.", "right": "CONSTANT OUTLOOK FOR NEW LOCALITIES."}
+  ],
+  "headings": [
+    {"text": "(b) IF ITS OWN TERRITORY IS NOT CULTIVATED BY PRESBYTERY, IT WILL NOT BE BY OTHERS.", "level": "h3"},
+    {"text": "(c) CONSTANT OUTLOOK FOR NEW LOCALITIES.", "level": "h3"}
+  ],
+  "italics": []
+}

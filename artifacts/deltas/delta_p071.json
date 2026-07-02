@@ -1,0 +1,9 @@
+{
+  "drop": ["70 THE PASTOR"],
+  "fixes": [
+    {"wrong": "ean he do that", "right": "can he do that"},
+    {"wrong": "Al that", "right": "All that"}
+  ],
+  "headings": [],
+  "italics": []
+}

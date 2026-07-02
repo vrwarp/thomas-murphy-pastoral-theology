@@ -1,0 +1,10 @@
+{
+  "drop": ["394 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "the Rey. Dr. Crowell", "right": "the Rev. Dr. Crowell"},
+    {"wrong": "this faect", "right": "this fact"},
+    {"wrong": "Nor ean", "right": "Nor can"}
+  ],
+  "headings": [],
+  "italics": []
+}

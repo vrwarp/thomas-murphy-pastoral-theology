@@ -1,0 +1,11 @@
+{
+  "drop": ["376 THE PASTOR IN THE", "376"],
+  "fixes": [
+    {"wrong": "Direricutty oF HARmMoniIzInG THE CoNTROL OF THE", "right": "DIFFICULTY OF HARMONIZING THE CONTROL OF THE"},
+    {"wrong": "CHURCH AND THE FREEDOM OF THE TEACHERS.", "right": "CHURCH AND THE FREEDOM OF THE TEACHERS."}
+  ],
+  "headings": [
+    {"text": "(b) Difficulty of Harmonizing the Control of the Church and the Freedom of the Teachers.", "level": "h3"}
+  ],
+  "italics": []
+}

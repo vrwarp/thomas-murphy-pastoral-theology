@@ -1,0 +1,10 @@
+{
+  "drop": ["28 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "‘The whole tendency", "right": "The whole tendency"},
+    {"wrong": "intense notion", "right": "intense motion"},
+    {"wrong": "emn-\nJating", "right": "emu-\nlating"}
+  ],
+  "headings": [],
+  "italics": []
+}

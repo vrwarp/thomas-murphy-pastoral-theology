@@ -1,0 +1,8 @@
+{
+  "drop": ["348 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "This‘has", "right": "This has"}
+  ],
+  "headings": [],
+  "italics": ["Through the plan of Bible exercises or Bible readings, as we have already described them,"]
+}

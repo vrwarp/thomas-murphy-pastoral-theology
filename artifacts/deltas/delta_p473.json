@@ -1,0 +1,12 @@
+{
+  "drop": ["472 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "responsibilites", "right": "responsibilities"},
+    {"wrong": "‘The obligation", "right": "The obligation"},
+    {"wrong": "ourselyes", "right": "ourselves"}
+  ],
+  "headings": [
+    {"text": "ATTENDANCE UPON THE HIGHER CHURCH COURTS.", "level": "h2"}
+  ],
+  "italics": []
+}

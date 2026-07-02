@@ -1,0 +1,13 @@
+{
+  "drop": ["438 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "churehes", "right": "churches"},
+    {"wrong": "goa great", "right": "go a great"},
+    {"wrong": "ean be gathered", "right": "can be gathered"},
+    {"wrong": "importanee", "right": "importance"},
+    {"wrong": "‘Then the church", "right": "Then the church"},
+    {"wrong": "T will not open", "right": "I will not open"}
+  ],
+  "headings": [],
+  "italics": []
+}

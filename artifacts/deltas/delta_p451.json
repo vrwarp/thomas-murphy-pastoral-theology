@@ -1,0 +1,9 @@
+{
+  "drop": ["CHAPTER X.", "THE PASTOR IN THE SESSION.", "450"],
+  "fixes": [
+    {"wrong": "blesseduess", "right": "blessedness"},
+    {"wrong": "hopefwl", "right": "hopeful"}
+  ],
+  "headings": [],
+  "italics": []
+}

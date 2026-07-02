@@ -1,0 +1,13 @@
+{
+  "drop": [
+    "330 THE PASTOR IN THE"
+  ],
+  "fixes": [
+    {"wrong": "REVIVars or INESTIMABLE", "right": "REVIVALS OF INESTIMABLE"}
+  ],
+  "headings": [
+    {"text": "REVIVALS.", "level": "h2"},
+    {"text": "(a) REVIVALS OF INESTIMABLE VALUE.", "level": "h3"}
+  ],
+  "italics": []
+}

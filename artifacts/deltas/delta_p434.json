@@ -1,0 +1,9 @@
+{
+  "drop": ["BENEVOLENT WORK OF THE CHURCH. 433", "55"],
+  "fixes": [
+    {"wrong": "In the various departments", "right": "in the various departments"},
+    {"wrong": "cliurch", "right": "church"}
+  ],
+  "headings": [],
+  "italics": []
+}

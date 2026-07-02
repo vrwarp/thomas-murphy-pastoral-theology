@@ -1,0 +1,11 @@
+{
+  "drop": ["SABBATH-SCHOOL. 387"],
+  "fixes": [
+    {"wrong": "Excitinc Interest IN THE BIBLE. .", "right": "Exciting Interest in the Bible."}
+  ],
+  "headings": [
+    {"text": "CONDUCTING THE SABBATH-SCHOOL.", "level": "h2"},
+    {"text": "(a) Exciting Interest in the Bible.", "level": "h3"}
+  ],
+  "italics": []
+}

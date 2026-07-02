@@ -1,0 +1,11 @@
+{
+  "drop": ["120 THE PASTOR"],
+  "fixes": [
+    {"wrong": "arehology", "right": "archaeology"},
+    {"wrong": "researeh", "right": "research"},
+    {"wrong": "justiee", "right": "justice"},
+    {"wrong": "‘The Prophets", "right": "The Prophets"}
+  ],
+  "headings": [],
+  "italics": []
+}

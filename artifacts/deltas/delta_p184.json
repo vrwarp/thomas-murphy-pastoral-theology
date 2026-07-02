@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE PULPIT. 183"],
+  "fixes": [
+    {"wrong": "fora sermon", "right": "for a sermon"},
+    {"wrong": "when uno other subjects", "right": "when no other subjects"}
+  ],
+  "headings": [],
+  "italics": []
+}

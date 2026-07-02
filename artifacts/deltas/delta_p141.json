@@ -1,0 +1,13 @@
+{
+  "drop": ["140 THE PASTOR"],
+  "fixes": [
+    {"wrong": "week to weck", "right": "week to week"},
+    {"wrong": "weck to week", "right": "week to week"},
+    {"wrong": "he ean lay", "right": "he can lay"},
+    {"wrong": "was onee made", "right": "was once made"},
+    {"wrong": "an exeellent pas-", "right": "an excellent pas-"},
+    {"wrong": "down and _pre-", "right": "down and pre-"}
+  ],
+  "headings": [],
+  "italics": []
+}

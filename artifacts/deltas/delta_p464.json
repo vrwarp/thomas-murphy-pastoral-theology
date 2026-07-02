@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE SESSION", "463"],
+  "fixes": [
+    {"wrong": "meckness", "right": "meekness"}
+  ],
+  "headings": [
+    {"text": "CHURCH STRIFES.", "level": "h2"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,14 @@
+{
+  "drop": ["416 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "‘These he should", "right": "These he should"},
+    {"wrong": "(6) GexeRAL SUPERVISION.", "right": "(b) GENERAL SUPERVISION."},
+    {"wrong": "John 8. Hart", "right": "John S. Hart"},
+    {"wrong": "“TI most fully", "right": "\"I most fully"},
+    {"wrong": "‘The minister should spend", "right": "The minister should spend"}
+  ],
+  "headings": [
+    {"text": "(b) GENERAL SUPERVISION.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,9 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 279"],
+  "fixes": [
+    {"wrong": "cal] upon", "right": "call upon"},
+    {"wrong": "dreain that", "right": "dream that"}
+  ],
+  "headings": [],
+  "italics": []
+}

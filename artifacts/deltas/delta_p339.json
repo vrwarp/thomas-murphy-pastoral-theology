@@ -1,0 +1,10 @@
+{
+  "drop": ["338 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Meetincs wit INQUIRERS", "right": "Meetings with Inquirers"}
+  ],
+  "headings": [
+    {"text": "(c) Meetings with Inquirers.", "level": "h3"}
+  ],
+  "italics": []
+}

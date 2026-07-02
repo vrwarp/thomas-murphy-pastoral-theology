@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE STUDY. 139"],
+  "fixes": [
+    {"wrong": "dcteriorate", "right": "deteriorate"}
+  ],
+  "headings": [],
+  "italics": []
+}

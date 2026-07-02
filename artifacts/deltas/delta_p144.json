@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE STUDY. 143"],
+  "fixes": [
+    {"wrong": "The Rey. Dr. Shedd", "right": "The Rev. Dr. Shedd"},
+    {"wrong": "marks Jolin Foster", "right": "marks John Foster"}
+  ],
+  "headings": [],
+  "italics": ["the daily, nightly and everlasting study of standard authors"]
+}

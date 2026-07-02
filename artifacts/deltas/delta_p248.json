@@ -1,0 +1,11 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 247"],
+  "fixes": [
+    {"wrong": "feebleness fron) age", "right": "feebleness from age"},
+    {"wrong": "the minister would haye", "right": "the minister would have"},
+    {"wrong": "of tle disease", "right": "of the disease"},
+    {"wrong": "met by: pointing", "right": "met by pointing"}
+  ],
+  "headings": [],
+  "italics": []
+}

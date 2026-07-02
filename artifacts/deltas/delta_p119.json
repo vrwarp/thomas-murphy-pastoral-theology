@@ -1,0 +1,10 @@
+{
+  "drop": ["118 THE PASTOR"],
+  "fixes": [
+    {"wrong": "‘be clearly understood", "right": "be clearly understood"},
+    {"wrong": "us direct commands", "right": "as direct commands"},
+    {"wrong": "ereation", "right": "creation"}
+  ],
+  "headings": [],
+  "italics": ["The prominent epochs of scriptural history should be clearly understood and firmly fixed upon the memory"]
+}

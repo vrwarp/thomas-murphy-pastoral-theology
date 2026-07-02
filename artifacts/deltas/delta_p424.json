@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL. 423"],
+  "fixes": [
+    {"wrong": "distinet", "right": "distinct"},
+    {"wrong": "‘This is a most im-", "right": "This is a most im-"},
+    {"wrong": "Ist.", "right": "1st."}
+  ],
+  "headings": [],
+  "italics": []
+}

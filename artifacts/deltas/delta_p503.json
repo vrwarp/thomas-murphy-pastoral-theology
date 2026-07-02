@@ -1,0 +1,15 @@
+{
+  "drop": ["502 INDEX."],
+  "fixes": [
+    {"wrong":"Cc.", "right":"C."},
+    {"wrong":"valne of, 393", "right":"value of, 393"},
+    {"wrong":"songht in preaching", "right":"sought in preaching"},
+    {"wrong":"875; harmonizing", "right":"375; harmonizing"},
+    {"wrong":"of a’ true re-", "right":"of a true re-"}
+  ],
+  "headings": [
+    {"text":"C.", "level":"h2"},
+    {"text":"D.", "level":"h2"}
+  ],
+  "italics": []
+}

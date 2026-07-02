@@ -1,0 +1,10 @@
+{
+  "drop": ["108 THE PASTOR"],
+  "fixes": [
+    {"wrong": "The halit of being", "right": "The habit of being"},
+    {"wrong": "‘The tend-", "right": "The tend-"},
+    {"wrong": "he foreed to be", "right": "he forced to be"}
+  ],
+  "headings": [],
+  "italics": ["The knowledge that one is ahead with his work puts him at his ease and gives him a feeling of satisfaction", "The habit of being beforehand with one's work prevents the necessity of hurry, with all its evil effects"]
+}

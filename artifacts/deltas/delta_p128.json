@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE STUDY.", "127"],
+  "fixes": [
+    {"wrong": "should he have", "right": "should they have"}
+  ],
+  "headings": [
+    {"text": "COMMITTING SCRIPTURE TO MEMORY.", "level": "h2"}
+  ],
+  "italics": []
+}

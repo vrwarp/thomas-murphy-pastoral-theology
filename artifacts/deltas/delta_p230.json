@@ -1,0 +1,10 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 229"],
+  "fixes": [
+    {"wrong": "the ouly way", "right": "the only way"}
+  ],
+  "headings": [
+    {"text": "HOW OFTEN SHOULD PASTORAL VISITS BE MADE?", "level": "h2"}
+  ],
+  "italics": []
+}

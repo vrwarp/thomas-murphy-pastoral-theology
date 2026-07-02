@@ -1,0 +1,9 @@
+{
+  "drop": ["ITS NATURE AND IMPORTANCE. BI"],
+  "fixes": [
+    {"wrong": "pustor", "right": "pastor"},
+    {"wrong": "I ain not likely", "right": "I am not likely"}
+  ],
+  "headings": [],
+  "italics": ["The rules suggested for the guidance of the pastor should always be as definite as possible."]
+}

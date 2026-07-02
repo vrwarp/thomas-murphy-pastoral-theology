@@ -1,0 +1,16 @@
+{
+  "drop": [
+    "IN THE CLOSET. 87"
+  ],
+  "fixes": [
+    {"wrong": "0. Lis sense", "right": "3. His sense"},
+    {"wrong": "erimes would", "right": "crimes would"},
+    {"wrong": "eharge duties", "right": "discharge duties"},
+    {"wrong": "it rs almost", "right": "it is almost"}
+  ],
+  "headings": [],
+  "italics": [
+    "His sense of the importance of consistency must act as a peculiarly healthful restraint upon the pastor.",
+    "The mind of the minister is constantly engaged on holy things, and it is almost inevitable that it should become more and more spiritual."
+  ]
+}

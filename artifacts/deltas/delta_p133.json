@@ -1,0 +1,13 @@
+{
+  "drop": ["132 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Serip-\nture", "right": "Scrip-\nture"},
+    {"wrong": "Holy Ghost. dic-", "right": "Holy Ghost dic-"}
+  ],
+  "headings": [],
+  "italics": [
+    "We get nearer to the mind of the Spirit in this way.",
+    "Out of all the possible languages of the world these were the ones which were providentially chosen for conveying the will of God to man.",
+    "It must be an unspeakable pleasure to get at the very terms which were written by inspired pens, the very sounds that were uttered by Jehovah and heard from his lips by his highly-favored servants."
+  ]
+}

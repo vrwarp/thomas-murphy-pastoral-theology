@@ -1,0 +1,9 @@
+{
+  "drop": ["306 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "eare", "right": "care"},
+    {"wrong": "‘Then", "right": "Then"}
+  ],
+  "headings": [],
+  "italics": ["The prayer-meeting should be carefully guarded against all scolding, grumbling and fault-finding."]
+}

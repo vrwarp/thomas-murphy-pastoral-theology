@@ -1,0 +1,11 @@
+{
+  "drop": ["90 THE PASTOR IN THE CLOSET."],
+  "fixes": [
+    {"wrong": "‘These prayers", "right": "These prayers"},
+    {"wrong": "‘Though he", "right": "Though he"},
+    {"wrong": "his godliness!’", "right": "his godliness!"},
+    {"wrong": "have tomake", "right": "have to make"}
+  ],
+  "headings": [],
+  "italics": ["The prayers of his godly people are ever going up for the pastor."]
+}

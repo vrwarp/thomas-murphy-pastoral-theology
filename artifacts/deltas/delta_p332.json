@@ -1,0 +1,8 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH. 331"],
+  "fixes": [
+    {"wrong": "‘The gospel dispensa-", "right": "The gospel dispensa-"}
+  ],
+  "headings": [],
+  "italics": []
+}

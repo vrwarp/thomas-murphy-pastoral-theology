@@ -1,0 +1,11 @@
+{
+  "drop": ["396 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Sabbath-sehool from", "right": "Sabbath-school from"},
+    {"wrong": "faet, it is seen", "right": "fact, it is seen"},
+    {"wrong": "Sabbath-sehool with", "right": "Sabbath-school with"},
+    {"wrong": "ineli-\nnation", "right": "incli-\nnation"}
+  ],
+  "headings": [],
+  "italics": ["now or never"]
+}

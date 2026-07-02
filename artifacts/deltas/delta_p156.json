@@ -1,0 +1,12 @@
+{
+  "drop": ["IN THE PULPIT. 155"],
+  "fixes": [
+    {"wrong": "‘The preacher", "right": "The preacher"},
+    {"wrong": "(a) THE Worp oF Gop.", "right": "(a) THE WORD OF GOD."}
+  ],
+  "headings": [
+    {"text": "WHAT TO PREACH.", "level": "h2"},
+    {"text": "(a) THE WORD OF GOD.", "level": "h3"}
+  ],
+  "italics": []
+}

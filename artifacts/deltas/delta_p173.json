@@ -1,0 +1,14 @@
+{
+  "drop": ["172 THE PASTOR"],
+  "fixes": [
+    {"wrong": "ean ever exhaust", "right": "can ever exhaust"},
+    {"wrong": "‘The preacher,", "right": "The preacher,"},
+    {"wrong": "crueified", "right": "crucified"},
+    {"wrong": "ean give real power", "right": "can give real power"},
+    {"wrong": "eross, is there power", "right": "cross, is there power"},
+    {"wrong": "praetieal sermons", "right": "practical sermons"},
+    {"wrong": "inculeating", "right": "inculcating"}
+  ],
+  "headings": [],
+  "italics": []
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["22 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "ages, All these", "right": "ages. All these"}
+  ],
+  "headings": [
+    {"text": "NECESSITY OF THIS STUDY AS A BRANCH OF TRAINING FOR THE CHRISTIAN MINISTRY.", "level": "h2"}
+  ],
+  "italics": []
+}

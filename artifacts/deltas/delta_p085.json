@@ -1,0 +1,10 @@
+{
+  "drop": ["84 THE PASTOR"],
+  "fixes": [
+    {"wrong": "take at for granted", "right": "take it for granted"},
+    {"wrong": "His incessant ministering to other makes", "right": "His incessant ministering to others makes"},
+    {"wrong": "evidenees", "right": "evidences"}
+  ],
+  "headings": [],
+  "italics": ["There are special temptations to which, from its peculiar nature, the ministerial office is exposed."]
+}

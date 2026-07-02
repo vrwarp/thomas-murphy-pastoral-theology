@@ -1,0 +1,24 @@
+{
+  "drop": ["INDEX. 507"],
+  "fixes": [
+    {"wrong": "Reading,and books", "right": "Reading, and books"},
+    {"wrong": "a a a ioe or Cas", "right": "tians, 381; immediate aims of, 382;"},
+    {"wrong": "cae ue aE o Eee", "right": "seeks the conversion of the scholars,"},
+    {"wrong": "spools ee", "right": "scholars, 383, 392; it trains the"},
+    {"wrong": "ae Poe ee ils own Boards,", "right": "should be given to its own Boards,"},
+    {"wrong": "ie sympathy with the Church,", "right": "in sympathy with the Church,"},
+    {"wrong": "ger of too te oe ou", "right": "ger of too much machinery, 409;"},
+    {"wrong": "library, 411; pee at", "right": "library, 411; prayer-meeting at"},
+    {"wrong": "al work in, 414; the pastor attend-", "right": "al work in, 414; the pastor attend-"},
+    {"wrong": "gy ale talc pastor Supervising,", "right": "416; the pastor supervising,"},
+    {"wrong": "cee Biblesclags ake", "right": "the pastor's Bible-class, 419;"},
+    {"wrong": "OR, Eke . ee", "right": "tion, 425."},
+    {"wrong": "Hers crieria of auacuuinemein", "right": "der's criteria of a genuine"},
+    {"wrong": "Peesfatynung convenes", "right": "care for young converts, 346."}
+  ],
+  "headings": [
+    {"text": "R.", "level": "h2"},
+    {"text": "S.", "level": "h2"}
+  ],
+  "italics": []
+}

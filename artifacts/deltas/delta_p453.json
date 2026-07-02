@@ -1,0 +1,10 @@
+{
+  "drop": ["452 THE PASTOR"],
+  "fixes": [
+    {"wrong": "ean help", "right": "can help"}
+  ],
+  "headings": [
+    {"text": "WORK OF THE ELDERS.", "level": "h2"}
+  ],
+  "italics": []
+}

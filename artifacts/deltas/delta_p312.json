@@ -1,0 +1,13 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 311"],
+  "fixes": [
+    {"wrong": "speeial prayer", "right": "special prayer"},
+    {"wrong": "ayaileth", "right": "availeth"},
+    {"wrong": "hfe", "right": "life"},
+    {"wrong": "‘There is hardly", "right": "There is hardly"},
+    {"wrong": "Bible exereise", "right": "Bible exercise"},
+    {"wrong": "A Bible exereise, as it is called", "right": "A Bible exercise, as it is called"}
+  ],
+  "headings": [],
+  "italics": ["The presentation of requests that special prayer be offered up on behalf of relatives and others should be encouraged.", "A meeting may sometimes be profitably taken up with a Bible exercise."]
+}

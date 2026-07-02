@@ -1,0 +1,14 @@
+{
+  "drop": ["IN THE STUDY. 145"],
+  "fixes": [
+    {"wrong": "Jicclesiastes", "right": "Ecclesiastes"},
+    {"wrong": "Jsaiah", "right": "Isaiah"},
+    {"wrong": "on zekiel,", "right": "on Ezekiel,"},
+    {"wrong": "Jlatthew", "right": "Matthew"},
+    {"wrong": "Hphesians", "right": "Ephesians"},
+    {"wrong": "d. Church History", "right": "5. Church History"},
+    {"wrong": "D’ Aubigné’s", "right": "D’Aubigné’s"}
+  ],
+  "headings": [],
+  "italics": ["Deuteronomy", "the whole Pentateuch", "Joshua and Judges", "Ruth and Samuel", "Esther", "Job", "Psalms", "Proverbs", "Ecclesiastes", "Song of Solomon", "Isaiah", "Jeremiah and Lamentations", "Ezekiel", "Daniel", "the minor prophets", "Haggai, Zechariah and Malachi", "the four Evangelists", "Matthew and Mark", "John", "Acts", "Romans", "Corinthians", "Galatians", "Ephesians", "Philippians and Colossians", "Thessalonians, Timothy, Titus and Philemon", "Hebrews", "James", "Peter", "John and Jude", "Revelation"]
+}

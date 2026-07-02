@@ -1,0 +1,11 @@
+{
+  "drop": ["186 THE PASTOR"],
+  "fixes": [
+    {"wrong": "02. Intercession", "right": "32. Intercession"},
+    {"wrong": "54. Effectual Calling", "right": "34. Effectual Calling"},
+    {"wrong": "48. Death; 44.", "right": "43. Death; 44."},
+    {"wrong": "165.\nChrist ever doing Good—representative case, Ieeding", "right": "15.\nChrist ever doing Good—representative case, Feeding"}
+  ],
+  "headings": [],
+  "italics": ["Leading Events in the Life of Christ"]
+}

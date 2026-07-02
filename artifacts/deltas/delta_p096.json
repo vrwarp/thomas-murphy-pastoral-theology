@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE STUDY. 95"],
+  "fixes": [
+    {"wrong": "Tt is impossible", "right": "It is impossible"}
+  ],
+  "headings": [],
+  "italics": []
+}

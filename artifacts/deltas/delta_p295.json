@@ -1,0 +1,10 @@
+{
+  "drop": ["294 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "(c) Visiting THE AGED, Sick AND Poor.", "right": "(c) Visiting the Aged, Sick and Poor."}
+  ],
+  "headings": [
+    {"text": "(c) Visiting the Aged, Sick and Poor.", "level": "h3"}
+  ],
+  "italics": []
+}

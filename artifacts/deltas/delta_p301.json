@@ -1,0 +1,10 @@
+{
+  "drop": ["300 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "chureh", "right": "church"},
+    {"wrong": "“very church,”", "right": "\"Every church,\""},
+    {"wrong": "Jind looks", "right": "Kind looks"}
+  ],
+  "headings": [],
+  "italics": []
+}

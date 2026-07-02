@@ -1,0 +1,14 @@
+{
+  "drop": ["262 THE PASTOR"],
+  "fixes": [
+    {"wrong": "eases", "right": "cases"},
+    {"wrong": "faet", "right": "fact"},
+    {"wrong": "and_ positively", "right": "and positively"},
+    {"wrong": "Yn most", "right": "In most"}
+  ],
+  "headings": [],
+  "italics": [
+    "The circumstances of the occasion should, if possible, give direction to the remarks which are made at a funeral.",
+    "The gospel of Christ and his salvation should be"
+  ]
+}

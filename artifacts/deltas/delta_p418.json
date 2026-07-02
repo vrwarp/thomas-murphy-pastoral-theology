@@ -1,0 +1,8 @@
+{
+  "drop": ["SABBATH-SCHOOL. 417", "53"],
+  "fixes": [
+    {"wrong": "eare should be taken", "right": "care should be taken"}
+  ],
+  "headings": [],
+  "italics": []
+}

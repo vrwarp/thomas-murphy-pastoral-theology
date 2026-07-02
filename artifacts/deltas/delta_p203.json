@@ -1,0 +1,13 @@
+{
+  "drop": ["202 THE PASTOR"],
+  "fixes": [
+    {"wrong": "erying need", "right": "crying need"},
+    {"wrong": "‘This is to be", "right": "This is to be"},
+    {"wrong": "‘The caution", "right": "The caution"},
+    {"wrong": "MeCheyne", "right": "McCheyne"},
+    {"wrong": "accepted or rejected ; how eritical", "right": "accepted or rejected; how critical"},
+    {"wrong": "‘Treasure can now", "right": "Treasure can now"}
+  ],
+  "headings": [],
+  "italics": []
+}

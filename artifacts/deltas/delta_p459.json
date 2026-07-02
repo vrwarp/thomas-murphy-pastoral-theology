@@ -1,0 +1,10 @@
+{
+  "drop": ["458 THE PASTOR"],
+  "fixes": [
+    {"wrong": "4, An elder", "right": "4. An elder"}
+  ],
+  "headings": [
+    {"text": "C. MEETINGS OF SESSION.", "level": "h2"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,14 @@
+{
+  "drop": ["378 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "superiniendent", "right": "superintendent"},
+    {"wrong": "dif+", "right": "dif-"}
+  ],
+  "headings": [
+    {"text": "THE PROVINCE OF THE SABBATH-SCHOOL.", "level": "h2"}
+  ],
+  "italics": [
+    "The session ought always to appoint, or at least nominate, the superintendent.",
+    "It ought to be the established law that the benevolent contributions of the school should be appropriated to the Boards of the Church under the direction of the session."
+  ]
+}

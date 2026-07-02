@@ -1,0 +1,10 @@
+{
+  "drop": ["92 THE PASTOR"],
+  "fixes": [
+    {"wrong": "constituent clement of", "right": "constituent element of"}
+  ],
+  "headings": [
+    {"text": "CLOSE STUDY INDISPENSABLE.", "level": "h2"}
+  ],
+  "italics": []
+}

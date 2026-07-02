@@ -1,0 +1,9 @@
+{
+  "drop": ["BENEVOLENT WORK OF THE CHURCH. 449", "57", "BT"],
+  "fixes": [
+    {"wrong": "‘Those who em-", "right": "Those who em-"},
+    {"wrong": "‘The whole Church", "right": "The whole Church"}
+  ],
+  "headings": [],
+  "italics": []
+}

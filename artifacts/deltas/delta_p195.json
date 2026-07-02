@@ -1,0 +1,11 @@
+{
+  "drop": ["194 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Suecess", "right": "Success"},
+    {"wrong": "witH", "right": "WITH"}
+  ],
+  "headings": [
+    {"text": "(b) Preaching Should Be With Tenderness.", "level": "h3"}
+  ],
+  "italics": []
+}

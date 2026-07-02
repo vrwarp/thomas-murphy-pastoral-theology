@@ -1,0 +1,15 @@
+{
+  "drop": [
+    "RELATIONS TO OTHER DENOMINATIONS. 497",
+    "63"
+  ],
+  "fixes": [
+    {"wrong": "inthe end", "right": "in the end"},
+    {"wrong": "Wuen Rieu.", "right": "WHEN RIGHT."},
+    {"wrong": "all. these", "right": "all these"}
+  ],
+  "headings": [
+    {"text": "(b) WHEN RIGHT.", "level": "h3"}
+  ],
+  "italics": []
+}

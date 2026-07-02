@@ -1,0 +1,12 @@
+{
+  "drop": ["398 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "a young clergymen", "right": "a young clergyman"},
+    {"wrong": "Ji should train them", "right": "It should train them"},
+    {"wrong": "out of a.", "right": "out of a"}
+  ],
+  "headings": [
+    {"text": "(d) Cultivating the Benevolence of the Children.", "level": "h3"}
+  ],
+  "italics": []
+}

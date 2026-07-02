@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE CLOSET.", "59"],
+  "fixes": [
+    {"wrong": "Eminent Prery 1s EXPECTED OF THE Pasror", "right": "Eminent Piety is Expected of the Pastor"}
+  ],
+  "headings": [
+    {"text": "(g) Eminent Piety is Expected of the Pastor.", "level": "h3"}
+  ],
+  "italics": []
+}

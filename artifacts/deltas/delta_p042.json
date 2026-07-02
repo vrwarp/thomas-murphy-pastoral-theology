@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE CLOSET. 41", "6"],
+  "fixes": [
+    {"wrong": "not thisa high", "right": "not this a high"}
+  ],
+  "headings": [],
+  "italics": ["Ambassador", "stewards"]
+}

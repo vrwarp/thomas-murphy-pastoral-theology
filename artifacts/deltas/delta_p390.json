@@ -1,0 +1,8 @@
+{
+  "drop": ["SABBATH-SCHOOL. 389"],
+  "fixes": [
+    {"wrong": "of: hosts", "right": "of hosts"}
+  ],
+  "headings": [],
+  "italics": []
+}

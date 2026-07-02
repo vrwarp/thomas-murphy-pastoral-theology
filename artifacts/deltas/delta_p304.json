@@ -1,0 +1,10 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 303"],
+  "fixes": [
+    {"wrong": "(2) Conpuctinc Prayer-MEETINGS.", "right": "(a) Conducting Prayer-Meetings."}
+  ],
+  "headings": [
+    {"text": "(a) Conducting Prayer-Meetings.", "level": "h3"}
+  ],
+  "italics": []
+}

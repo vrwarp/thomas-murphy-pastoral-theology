@@ -1,0 +1,15 @@
+{
+  "drop": ["IN THE PULPIT. 217", "28"],
+  "fixes": [
+    {"wrong": "perfectly calin.", "right": "perfectly calm."},
+    {"wrong": "when fonnd.", "right": "when found."},
+    {"wrong": "whieh are handed", "right": "which are handed"},
+    {"wrong": "diseoncert the preacher", "right": "disconcert the preacher"}
+  ],
+  "headings": [],
+  "italics": [
+    "The portion of Scripture to be read and the hymns to be given out should all be selected beforehand and carefully gone over, so that their contents may be fully known.",
+    "The minister should set himself resolutely against hearing anything that might worry or agitate him as he enters the pulpit.",
+    "The notices which are handed him to be read in the pulpit often disconcert the preacher at the commencement of public worship."
+  ]
+}

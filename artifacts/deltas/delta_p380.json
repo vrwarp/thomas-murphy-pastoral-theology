@@ -1,0 +1,8 @@
+{
+  "drop": ["SABBATH-SCHOOL. 379"],
+  "fixes": [
+    {"wrong": "assis¢", "right": "assist"}
+  ],
+  "headings": [],
+  "italics": ["To assist in the religious training of the Church's own children and youth", "assist"]
+}

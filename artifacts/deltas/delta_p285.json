@@ -1,0 +1,11 @@
+{
+  "drop": ["284 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "ean do better", "right": "can do better"},
+    {"wrong": "Inthe church", "right": "In the church"},
+    {"wrong": "Doreas society", "right": "Dorcas society"},
+    {"wrong": "Let eaeh", "right": "Let each"}
+  ],
+  "headings": [],
+  "italics": []
+}

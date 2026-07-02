@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE PULPIT.", "181"],
+  "fixes": [
+    {"wrong": "Subjeets", "right": "Subjects"}
+  ],
+  "headings": [],
+  "italics": [
+    "will thus be brought up for our study and the people’s edification"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["CHAPTER IX.", "THE PASTOR IN THE BENEVOLENT WORK OF", "THE CHURCH.", "427"],
+  "fixes": [
+    {"wrong": "Jt has brought", "right": "It has brought"}
+  ],
+  "headings": [
+    {"text": "CHRISTIAN BENEFICENCE THE GREAT PRACTICAL QUESTION OF THE AGE.", "level": "h2"}
+  ],
+  "italics": []
+}

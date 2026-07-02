@@ -1,0 +1,17 @@
+{
+  "drop": ["293 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "chureh of their own", "right": "church of their own"},
+    {"wrong": "negleet it", "right": "neglect it"},
+    {"wrong": "This might have been prevented. If the chureh had", "right": "This might have been prevented. If the church had"},
+    {"wrong": "beeome happy", "right": "become happy"},
+    {"wrong": "no new families or individuals could come into the", "right": "no new families or individuals could come into the"},
+    {"wrong": "neighborhood of the chureh without", "right": "neighborhood of the church without"},
+    {"wrong": "sphere of the chureh’s influence", "right": "sphere of the church's influence"},
+    {"wrong": "In a new community", "right": "in a new community"}
+  ],
+  "headings": [
+    {"text": "(a) THERE SHOULD BE SOME AGENCY FOR MAKING THE ACQUAINTANCE OF STRANGERS.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,8 @@
+{
+  "drop": ["72 THE PASTOR"],
+  "fixes": [
+    {"wrong": "ageregate", "right": "aggregate"}
+  ],
+  "headings": [],
+  "italics": []
+}

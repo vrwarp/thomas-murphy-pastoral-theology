@@ -1,0 +1,9 @@
+{
+  "drop": ["150 THE PASTOR IN THE STUDY."],
+  "fixes": [
+    {"wrong": "Tt is, then, almost essential", "right": "It is, then, almost essential"},
+    {"wrong": "tuke a few of the very best", "right": "take a few of the very best"}
+  ],
+  "headings": [],
+  "italics": []
+}

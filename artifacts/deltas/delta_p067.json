@@ -1,0 +1,10 @@
+{
+  "drop": ["66 THE PASTOR"],
+  "fixes": [
+    {"wrong": "suecess", "right": "success"},
+    {"wrong": "‘The most", "right": "The most"},
+    {"wrong": "chil-\nren", "right": "chil-\ndren"}
+  ],
+  "headings": [],
+  "italics": []
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["290 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "‘lo them", "right": "To them"}
+  ],
+  "headings": [
+    {"text": "WOMAN'S WORK.", "level": "h2"}
+  ],
+  "italics": []
+}

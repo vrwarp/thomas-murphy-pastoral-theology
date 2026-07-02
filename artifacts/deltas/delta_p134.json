@@ -1,0 +1,14 @@
+{
+  "drop": ["IN THE STUDY. 133"],
+  "fixes": [
+    {"wrong": "whetlier", "right": "whether"},
+    {"wrong": "‘They are founded", "right": "They are founded"},
+    {"wrong": "‘The\npress", "right": "The\npress"}
+  ],
+  "headings": [],
+  "italics": [
+    "To be skilled in these languages gives one an independence in interpreting the Scriptures and an authority in expounding them which cannot be too highly valued.",
+    "Some of the best modern commentaries on the Scriptures cannot be used to full advantage without a knowledge of these languages.",
+    "Ministers should keep up and increase their acquaintance with the original languages, because some day they may themselves undertake to prepare commentaries,"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "drop": ["468 THE PASTOR"],
+  "fixes": [
+    {"wrong": "never cither", "right": "never either"}
+  ],
+  "headings": [],
+  "italics": []
+}

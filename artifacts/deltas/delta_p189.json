@@ -1,0 +1,15 @@
+{
+  "drop": ["188 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Athens; 16.", "right": "Athens; 15."},
+    {"wrong": "Merey-\nseat", "right": "Mercy-\nseat"},
+    {"wrong": "Atonement; 26.", "right": "Atonement; 25."},
+    {"wrong": "PREACHING,", "right": "PREACHING."},
+    {"wrong": "suecess", "right": "success"}
+  ],
+  "headings": [
+    {"text": "MANNER OF PREACHING.", "level": "h2"},
+    {"text": "(a) DEEP EARNESTNESS.", "level": "h3"}
+  ],
+  "italics": ["Jewish Institutions and their Teachings"]
+}

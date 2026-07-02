@@ -1,0 +1,9 @@
+{
+  "drop": ["156 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Serip-", "right": "Scrip-"},
+    {"wrong": "seareh out the mind", "right": "search out the mind"}
+  ],
+  "headings": [],
+  "italics": []
+}

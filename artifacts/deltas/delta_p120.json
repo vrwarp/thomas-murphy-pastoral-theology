@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE STUDY. 119"],
+  "fixes": [
+    {"wrong":"‘This will give", "right":"This will give"},
+    {"wrong":"aad of the best", "right":"aid of the best"}
+  ],
+  "headings": [],
+  "italics": ["The Bible should be studied constantly with the aid of the best commentaries."]
+}

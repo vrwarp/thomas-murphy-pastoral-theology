@@ -1,0 +1,11 @@
+{
+  "drop": ["IN THE CLOSET. 57"],
+  "fixes": [
+    {"wrong": "‘The whole", "right": "The whole"},
+    {"wrong": "Tae Pastor 1s APPOINTED TO BE A Living EXAMPLE", "right": "THE PASTOR IS APPOINTED TO BE A LIVING EXAMPLE"}
+  ],
+  "headings": [
+    {"text": "(f) THE PASTOR IS APPOINTED TO BE A LIVING EXAMPLE OF THE GOSPEL WHICH HE PREACHES.", "level": "h3"}
+  ],
+  "italics": ["have a good report"]
+}

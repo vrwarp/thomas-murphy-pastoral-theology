@@ -1,0 +1,9 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 295"],
+  "fixes": [
+    {"wrong": "conld", "right": "could"},
+    {"wrong": "ean describe", "right": "can describe"}
+  ],
+  "headings": [],
+  "italics": []
+}

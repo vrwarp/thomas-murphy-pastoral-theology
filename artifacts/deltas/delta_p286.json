@@ -1,0 +1,10 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 285"],
+  "fixes": [
+    {"wrong": "sall acted", "right": "all acted"},
+    {"wrong": "ageregate", "right": "aggregate"},
+    {"wrong": "to assist,", "right": "to assist."}
+  ],
+  "headings": [],
+  "italics": []
+}

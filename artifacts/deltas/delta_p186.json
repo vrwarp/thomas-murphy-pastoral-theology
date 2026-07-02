@@ -1,0 +1,15 @@
+{
+  "drop": ["IN THE PULPIT. 185"],
+  "fixes": [
+    {"wrong": "52. Samson, a", "right": "32. Samson, a"},
+    {"wrong": "86. Saul made", "right": "36. Saul made"},
+    {"wrong": "jan Army", "right": "ian Army"},
+    {"wrong": "67.", "right": "57."},
+    {"wrong": "62. Feast.of Purim", "right": "62. Feast of Purim"},
+    {"wrong": "38. The Bible", "right": "3. The Bible"},
+    {"wrong": "_ liness of God; 18. Justice", "right": "liness of God; 13. Justice"},
+    {"wrong": "25. Original", "right": "23. Original"}
+  ],
+  "headings": [],
+  "italics": ["Chief Doctrines of Theology"]
+}

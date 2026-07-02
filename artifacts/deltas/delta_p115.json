@@ -1,0 +1,9 @@
+{
+  "drop": ["114 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Serip-\ntures", "right": "Scrip-\ntures"},
+    {"wrong": "ean see", "right": "can see"}
+  ],
+  "headings": [],
+  "italics": []
+}

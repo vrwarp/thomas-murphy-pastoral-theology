@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL. 391"],
+  "fixes": [
+    {"wrong": "What ail feel", "right": "What all feel"}
+  ],
+  "headings": [
+    {"text": "(b) Aiming Directly for the Conversion of the Scholars.", "level": "h3"}
+  ],
+  "italics": []
+}

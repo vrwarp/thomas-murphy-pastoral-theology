@@ -1,0 +1,8 @@
+{
+  "drop": ["240 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Jong address", "right": "long address"}
+  ],
+  "headings": [],
+  "italics": ["The utmost tenderness should be used in praying and conversing with the suffering."]
+}

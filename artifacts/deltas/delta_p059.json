@@ -1,0 +1,9 @@
+{
+  "drop": ["58 THE PASTOR"],
+  "fixes": [
+    {"wrong": "eflicacy", "right": "efficacy"},
+    {"wrong": "filthy luere", "right": "filthy lucre"}
+  ],
+  "headings": [],
+  "italics": ["but being examples"]
+}

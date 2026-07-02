@@ -1,0 +1,11 @@
+{
+  "drop": ["BENEVOLENT WORK OF THE CHURCH. 445"],
+  "fixes": [
+    {"wrong": "tts claims pre-", "right": "its claims pre-"}
+  ],
+  "headings": [],
+  "italics": [
+    "collection in the church on the Lord's day after the object has been previously announced and its claims presented with more or less fullness",
+    "to have elders or others who are interested go through the congregation, to each family and each individual, and receive whatever amounts they are willing to contribute"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "drop": ["IN THE PULPIT. 129"],
+  "fixes": [
+    {"wrong": "tocome", "right": "to come"},
+    {"wrong": "Seriptures", "right": "Scriptures"}
+  ],
+  "headings": [
+    {"text": "THE STUDY OF HEBREW AND GREEK.", "level": "h2"}
+  ],
+  "italics": []
+}

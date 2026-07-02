@@ -1,0 +1,9 @@
+{
+  "drop": ["135 THE PASTOR"],
+  "fixes": [
+    {"wrong": "preparing it iu a", "right": "preparing it in a"},
+    {"wrong": "‘These things", "right": "These things"}
+  ],
+  "headings": [],
+  "italics": []
+}

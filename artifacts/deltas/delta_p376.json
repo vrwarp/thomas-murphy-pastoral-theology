@@ -1,0 +1,12 @@
+{
+  "drop": ["SABBATH-SCHOOL. 375"],
+  "fixes": [
+    {"wrong": "THr CHURCH AS SUCH SHOULD ConDUCT", "right": "THE CHURCH AS SUCH SHOULD CONDUCT"},
+    {"wrong": "‘That she should", "right": "That she should"},
+    {"wrong": "Jook", "right": "look"}
+  ],
+  "headings": [
+    {"text": "(a) THE CHURCH AS SUCH SHOULD CONDUCT THE SABBATH-SCHOOL.", "level": "h3"}
+  ],
+  "italics": []
+}

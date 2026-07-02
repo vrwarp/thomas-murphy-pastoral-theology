@@ -1,0 +1,10 @@
+{
+  "drop": ["212 THE PASTOR"],
+  "fixes": [
+    {"wrong": "supphants", "right": "suppliants"},
+    {"wrong": "studicd", "right": "studied"},
+    {"wrong": "inpatient", "right": "impatient"}
+  ],
+  "headings": [],
+  "italics": ["Brevity should be carefully studied in public prayer."]
+}

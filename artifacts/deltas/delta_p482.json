@@ -1,0 +1,12 @@
+{
+  "drop": ["HIGHER COURTS OF THE CHURCH. 481", "61"],
+  "fixes": [
+    {"wrong": "(d) Wuat PrespyTERY CAN Do IN sucH Locations.", "right": "(d) What Presbytery Can Do in Such Locations."}
+  ],
+  "headings": [
+    {"text": "(d) What Presbytery Can Do in Such Locations.", "level": "h3"}
+  ],
+  "italics": [
+    "There might be a standing committee of presbytery whose duty it would be to exercise a general supervision"
+  ]
+}

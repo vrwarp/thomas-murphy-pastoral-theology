@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL. 415"],
+  "fixes": [
+    {"wrong":"°", "right":""}
+  ],
+  "headings": [
+    {"text":"(a) REGULAR ATTENDANCE.", "level":"h3"}
+  ],
+  "italics": []
+}

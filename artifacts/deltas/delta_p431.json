@@ -1,0 +1,9 @@
+{
+  "drop": ["430 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Phenomenon EF.", "right": "Phenomenon E."},
+    {"wrong": "‘The need for", "right": "The need for"}
+  ],
+  "headings": [],
+  "italics": ["Phenomenon C", "Phenomenon D", "Phenomenon E"]
+}

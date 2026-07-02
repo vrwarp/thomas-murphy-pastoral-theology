@@ -1,0 +1,11 @@
+{
+  "drop": ["IN THE CLOSET. 47."],
+  "fixes": [
+    {"wrong": "(s) THe ConvVERSION OF SOULS AND THE PROSPERITY OF", "right": "(c) THE CONVERSION OF SOULS AND THE PROSPERITY OF"},
+    {"wrong": "Pas-\nror’s PIETY.", "right": "PAS-\nTOR'S PIETY."}
+  ],
+  "headings": [
+    {"text": "(c) THE CONVERSION OF SOULS AND THE PROSPERITY OF THE CHURCH DEPEND ON THE DEGREE OF THE PASTOR'S PIETY.", "level": "h3"}
+  ],
+  "italics": ["hence"]
+}

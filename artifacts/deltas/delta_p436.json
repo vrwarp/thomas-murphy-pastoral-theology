@@ -1,0 +1,11 @@
+{
+  "drop": ["BENEVOLENT WORK OF THE CHURCH. 438"],
+  "fixes": [
+    {"wrong": "aud impressively", "right": "and impressively"},
+    {"wrong": "pomt shall", "right": "point shall"}
+  ],
+  "headings": [
+    {"text": "COLLECTIONS SHOULD BE TAKEN UP FOR EACH BENEVOLENT CAUSE OF THE CHURCH.", "level": "h2"}
+  ],
+  "italics": []
+}

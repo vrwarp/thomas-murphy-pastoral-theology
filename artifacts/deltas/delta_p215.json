@@ -1,0 +1,9 @@
+{
+  "drop": ["214 THE PASTOR —"],
+  "fixes": [
+    {"wrong": "Seripture", "right": "Scripture"},
+    {"wrong": "earnesiness", "right": "earnestness"}
+  ],
+  "headings": [],
+  "italics": ["The public prayer of the pastor should be an echo of the deep earnestness which he has learned in the closet."]
+}

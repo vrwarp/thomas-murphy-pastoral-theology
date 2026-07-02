@@ -1,0 +1,9 @@
+{
+  "drop": ["20 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "4, The accumulated", "right": "4. The accumulated"},
+    {"wrong": "hefore him", "right": "before him"}
+  ],
+  "headings": [],
+  "italics": ["The accumulated experience of other workers in the same general field"]
+}

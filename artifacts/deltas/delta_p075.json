@@ -1,0 +1,8 @@
+{
+  "drop": ["74 THE PASTOR"],
+  "fixes": [
+    {"wrong": "‘The consciousness", "right": "The consciousness"}
+  ],
+  "headings": [],
+  "italics": []
+}

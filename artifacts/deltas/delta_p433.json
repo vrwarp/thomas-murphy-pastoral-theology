@@ -1,0 +1,11 @@
+{
+  "drop": ["432 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "(a) THe PASTOR SHOULD KEEP HIMSELF WELL INFORMED.", "right": "(a) THE PASTOR SHOULD KEEP HIMSELF WELL INFORMED."}
+  ],
+  "headings": [
+    {"text": "INFORMATION CONCERNING THE BENEVOLENT WORK OF THE CHURCH.", "level": "h2"},
+    {"text": "(a) THE PASTOR SHOULD KEEP HIMSELF WELL INFORMED.", "level": "h3"}
+  ],
+  "italics": []
+}

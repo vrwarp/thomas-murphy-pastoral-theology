@@ -1,0 +1,8 @@
+{
+  "drop": ["PREFACE.", "5"],
+  "fixes": [
+    {"wrong": "relicd", "right": "relied"}
+  ],
+  "headings": [],
+  "italics": []
+}

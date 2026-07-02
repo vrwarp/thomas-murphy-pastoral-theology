@@ -1,0 +1,13 @@
+{
+  "drop": ["414 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "suecess", "right": "success"},
+    {"wrong": "imadver-\nteney", "right": "inadver-\ntency"},
+    {"wrong": "shonld", "right": "should"},
+    {"wrong": "feclings", "right": "feelings"}
+  ],
+  "headings": [
+    {"text": "THE PASTOR'S PERSONAL WORK IN THE SABBATH-SCHOOL.", "level": "h2"}
+  ],
+  "italics": []
+}

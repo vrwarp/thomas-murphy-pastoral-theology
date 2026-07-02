@@ -1,0 +1,9 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 227"],
+  "fixes": [
+    {"wrong": "ealling", "right": "calling"},
+    {"wrong": "liy-\ning fervidness", "right": "liv-\ning fervidness"}
+  ],
+  "headings": [],
+  "italics": []
+}

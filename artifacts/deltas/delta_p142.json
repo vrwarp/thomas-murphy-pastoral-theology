@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE STUDY.", "141"],
+  "fixes": [
+    {"wrong": "creeping ou,", "right": "creeping on,"}
+  ],
+  "headings": [
+    {"text": "READING AND BOOKS.", "level": "h2"}
+  ],
+  "italics": []
+}

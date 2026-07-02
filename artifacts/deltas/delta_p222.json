@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE PULPIT. 221"],
+  "fixes": [
+    {"wrong": "Tt is well, therefore", "right": "It is well, therefore"},
+    {"wrong": "‘The following rules", "right": "The following rules"},
+    {"wrong": "earefully prepared", "right": "carefully prepared"}
+  ],
+  "headings": [],
+  "italics": []
+}

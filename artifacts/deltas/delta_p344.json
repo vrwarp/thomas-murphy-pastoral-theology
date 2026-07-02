@@ -1,0 +1,9 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH. 343"],
+  "fixes": [
+    {"wrong": "ean do it", "right": "can do it"},
+    {"wrong": "the chureh", "right": "the church"}
+  ],
+  "headings": [],
+  "italics": []
+}

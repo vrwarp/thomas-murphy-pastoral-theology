@@ -1,0 +1,11 @@
+{
+  "drop": ["IN THE PULPIT. 175"],
+  "fixes": [
+    {"wrong": "DocrrinES", "right": "DOCTRINES"},
+    {"wrong": "God _ has", "right": "God has"}
+  ],
+  "headings": [
+    {"text": "(d) DOCTRINES SHOULD BE PREACHED.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,11 @@
+{
+  "drop": ["408 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "onght", "right": "ought"},
+    {"wrong": "seeularize", "right": "secularize"},
+    {"wrong": "withont", "right": "without"},
+    {"wrong": "suecessful", "right": "successful"}
+  ],
+  "headings": [],
+  "italics": []
+}

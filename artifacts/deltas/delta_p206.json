@@ -1,0 +1,12 @@
+{
+  "drop": ["IN THE PULPIT. 205"],
+  "fixes": [
+    {"wrong": "There isa kind", "right": "There is a kind"},
+    {"wrong": "ete.", "right": "etc."},
+    {"wrong": "Ifsuch impiety", "right": "If such impiety"}
+  ],
+  "headings": [
+    {"text": "(e) SENSATIONAL PREACHING.", "level": "h3"}
+  ],
+  "italics": []
+}

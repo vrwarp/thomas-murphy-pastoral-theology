@@ -1,0 +1,8 @@
+{
+  "drop": ["96 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Jabors", "right": "labors"}
+  ],
+  "headings": [],
+  "italics": ["many"]
+}

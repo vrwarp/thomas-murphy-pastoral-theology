@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE STUDY. 105", "14"],
+  "fixes": [
+    {"wrong": "“T do not mean", "right": "“I do not mean"},
+    {"wrong": "and,so many", "right": "and, so many"}
+  ],
+  "headings": [],
+  "italics": []
+}

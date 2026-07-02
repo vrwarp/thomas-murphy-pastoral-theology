@@ -1,0 +1,16 @@
+{
+  "drop": [
+    "PASTORAL ‘THEOLOGY.",
+    "CHAPTER I.",
+    "NATURE AND IMPORTANCE OF PASTORAL",
+    "THEOLOGY.",
+    "13"
+  ],
+  "fixes": [
+    {"wrong": "Tuat department", "right": "That department"}
+  ],
+  "headings": [
+    {"text": "WHAT IS PASTORAL THEOLOGY?", "level": "h2"}
+  ],
+  "italics": []
+}

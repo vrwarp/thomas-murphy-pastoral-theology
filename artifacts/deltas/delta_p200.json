@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE PULPIT. 199"],
+  "fixes": [
+    {"wrong": "ny full share", "right": "my full share"},
+    {"wrong": "wauts", "right": "wants"}
+  ],
+  "headings": [],
+  "italics": []
+}

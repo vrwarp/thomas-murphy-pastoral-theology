@@ -1,0 +1,11 @@
+{
+  "drop": ["IN THE CLOSET. 49", "7"],
+  "fixes": [
+    {"wrong": "<A few", "right": "A few"},
+    {"wrong": "real effli-\nciency", "right": "real effi-\nciency"}
+  ],
+  "headings": [
+    {"text": "(d) The Real Power of the Pastor is in his Earnest Godliness.", "level": "h3"}
+  ],
+  "italics": []
+}

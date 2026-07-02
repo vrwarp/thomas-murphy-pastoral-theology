@@ -1,0 +1,11 @@
+{
+  "drop": ["SABBATH-SCHOOL. 403"],
+  "fixes": [
+    {"wrong": "THe SABBATH-SCHOOL", "right": "THE SABBATH-SCHOOL"},
+    {"wrong": "take‘pains", "right": "take pains"}
+  ],
+  "headings": [
+    {"text": "(e) The Sabbath-School to be Kept in Sympathy with the Church.", "level": "h3"}
+  ],
+  "italics": []
+}

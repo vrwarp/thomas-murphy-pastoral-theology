@@ -1,0 +1,8 @@
+{
+  "drop": ["124 THE PASTOR"],
+  "fixes": [
+    {"wrong": "until tt has worked", "right": "until it has worked"}
+  ],
+  "headings": [],
+  "italics": ["The study of the word of God should be continued until it has worked itself up into a fascination."]
+}

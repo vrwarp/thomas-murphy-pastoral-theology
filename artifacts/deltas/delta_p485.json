@@ -1,0 +1,11 @@
+{
+  "drop": ["484 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "eially", "right": "cially"}
+  ],
+  "headings": [
+    {"text": "BROTHERLY KINDNESS IN ECCLESIASTICAL ASSEMBLIES.", "level": "h2"}
+  ],
+  "italics": []
+}
+

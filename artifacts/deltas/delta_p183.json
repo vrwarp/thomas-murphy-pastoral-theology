@@ -1,0 +1,14 @@
+{
+  "drop": ["182 THE PASTOR"],
+  "fixes": [
+    {"wrong": "4, This plan", "right": "4. This plan"},
+    {"wrong": "a subjeet", "right": "a subject"},
+    {"wrong": "veady as soon", "right": "ready as soon"},
+    {"wrong": "‘There is no task", "right": "There is no task"}
+  ],
+  "headings": [],
+  "italics": [
+    "This plan will almost certainly lead to the important result of keeping up variety in preaching.",
+    "By this arrangement there will always be a subject ready as soon as the minute arrives for commencing the study of the sermon for the week."
+  ]
+}

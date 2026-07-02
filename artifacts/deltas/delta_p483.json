@@ -1,0 +1,13 @@
+{
+  "drop": ["482 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "ecom-\nmittee", "right": "com-\nmittee"},
+    {"wrong": "enterprisc", "right": "enterprise"}
+  ],
+  "headings": [],
+  "italics": [
+    "of the missionary work within its bounds",
+    "The ministers of the presbytery might be detailed to preach in turn at such missionary stations as are not yet ripe for the entire services of one man",
+    "Presbytery should constantly have some new church enterprise on hand"
+  ]
+}

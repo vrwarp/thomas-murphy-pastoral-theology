@@ -1,0 +1,11 @@
+{
+  "drop": ["406 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "‘There are very great improvements", "right": "There are very great improvements"},
+    {"wrong": "novelties\nare greatly dreaded, At the same time", "right": "novelties\nare greatly dreaded. At the same time"}
+  ],
+  "headings": [
+    {"text": "(f) IMPROVEMENTS IN SABBATH-SCHOOL WORK.", "level": "h3"}
+  ],
+  "italics": []
+}

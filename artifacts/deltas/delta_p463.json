@@ -1,0 +1,9 @@
+{
+  "drop": ["462 THE PASTOR"],
+  "fixes": [
+    {"wrong": "the churel:", "right": "the church"},
+    {"wrong": "38. Even such trou-", "right": "3. Even such trou-"}
+  ],
+  "headings": [],
+  "italics": []
+}

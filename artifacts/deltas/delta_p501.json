@@ -1,0 +1,8 @@
+{
+  "drop": ["500 THE PASTOR AND OTHER DENOMINATIONS."],
+  "fixes": [
+    {"wrong": "atan end", "right": "at an end"}
+  ],
+  "headings": [],
+  "italics": []
+}

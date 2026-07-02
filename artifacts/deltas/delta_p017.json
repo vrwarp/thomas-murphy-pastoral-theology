@@ -1,0 +1,9 @@
+{
+  "drop": ["16 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "Jargely increased", "right": "largely increased"},
+    {"wrong": "scminaries", "right": "seminaries"}
+  ],
+  "headings": [],
+  "italics": []
+}

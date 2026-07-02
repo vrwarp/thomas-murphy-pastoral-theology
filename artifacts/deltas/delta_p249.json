@@ -1,0 +1,10 @@
+{
+  "drop": ["248 THE PASTOR"],
+  "fixes": [
+    {"wrong": "afiliction", "right": "affliction"}
+  ],
+  "headings": [
+    {"text": "VISITING THOSE WHO ARE IN SORROW.", "level": "h2"}
+  ],
+  "italics": []
+}

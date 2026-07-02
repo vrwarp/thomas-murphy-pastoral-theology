@@ -1,0 +1,8 @@
+{
+  "drop": ["ITS NATURE AND IMPORTANCE. 19"],
+  "fixes": [
+    {"wrong": "‘The", "right": "The"}
+  ],
+  "headings": [],
+  "italics": ["The character of that human nature with which the pastor has to do"]
+}

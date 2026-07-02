@@ -1,0 +1,9 @@
+{
+  "drop": ["184 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Testament [History.—These", "right": "Testament History.—These"},
+    {"wrong": "KE. Leading", "right": "E. Leading"}
+  ],
+  "headings": [],
+  "italics": ["Leading Events of Old Testament History"]
+}

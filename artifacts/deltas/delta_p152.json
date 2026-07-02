@@ -1,0 +1,8 @@
+{
+  "drop": ["CHAPTER IV.", "THE PASTOR IN THE PULPIT.", "151"],
+  "fixes": [
+    {"wrong": "th self", "right": "thyself"}
+  ],
+  "headings": [],
+  "italics": []
+}

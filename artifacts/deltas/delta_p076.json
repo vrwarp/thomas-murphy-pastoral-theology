@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE CLOSET.", "75"],
+  "fixes": [
+    {"wrong": "heay-\nenly fragrance", "right": "heav-\nenly fragrance"}
+  ],
+  "headings": [],
+  "italics": []
+}

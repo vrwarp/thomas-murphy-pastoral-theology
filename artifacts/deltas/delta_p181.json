@@ -1,0 +1,13 @@
+{
+  "drop": ["180 THE PASTOR"],
+  "fixes": [
+    {"wrong": "The whole ficld", "right": "The whole field"},
+    {"wrong": "of Scripture history, nay thus be covered", "right": "of Scripture history, may thus be covered"}
+  ],
+  "headings": [
+    {"text": "COURSES OF SERMONS.", "level": "h2"}
+  ],
+  "italics": [
+    "The whole field of Christian doctrine and duty, and of Scripture history, may thus be covered in the course of one's ministry."
+  ]
+}

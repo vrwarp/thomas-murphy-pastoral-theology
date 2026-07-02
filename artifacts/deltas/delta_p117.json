@@ -1,0 +1,9 @@
+{
+  "drop": ["116 THE PASTOR"],
+  "fixes": [
+    {"wrong": "ats whole context", "right": "its whole context"},
+    {"wrong": "studicd out", "right": "studied out"}
+  ],
+  "headings": [],
+  "italics": ["its whole context should be carefully studied out", "The location of a few prominent places, comprehending the body of biblical geography, should be fixed distinctly in the memory"]
+}

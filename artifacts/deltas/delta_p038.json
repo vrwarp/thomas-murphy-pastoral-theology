@@ -1,0 +1,10 @@
+{
+  "drop": ["CHAPTER II.", "THE PASTOR IN THE CLOSET.", "37"],
+  "fixes": [
+    {"wrong": "Ir should", "right": "It should"}
+  ],
+  "headings": [
+    {"text": "THE PIETY WHICH IS NEEDFUL FOR THE PASTORAL OFFICE.", "level": "h2"}
+  ],
+  "italics": []
+}

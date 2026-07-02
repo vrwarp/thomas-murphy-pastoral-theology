@@ -1,0 +1,13 @@
+{
+  "drop": ["30 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "Not these, bué all", "right": "Not these, but all"},
+    {"wrong": "throw hght", "right": "throw light"},
+    {"wrong": "which may yery soon", "right": "which may very soon"}
+  ],
+  "headings": [],
+  "italics": [
+    "but all those things that are peculiar to the character and necessary to the highest success of the pastoral office, are the subjects of which it should treat",
+    "Only such plans of work, rules for study and principles of ministerial life as have been well tried and proved wise should be inculcated"
+  ]
+}

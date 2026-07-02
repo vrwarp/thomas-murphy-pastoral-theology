@@ -1,0 +1,10 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 323"],
+  "fixes": [
+    {"wrong": "38. Independent", "right": "3. Independent"}
+  ],
+  "headings": [
+    {"text": "TEMPERANCE.", "level": "h2"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,12 @@
+{
+  "drop": ["316 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Corrace PrayrEr-MEETINGS", "right": "COTTAGE PRAYER-MEETINGS"},
+    {"wrong": "mectings", "right": "meetings"},
+    {"wrong": "‘There could be no", "right": "There could be no"}
+  ],
+  "headings": [
+    {"text": "(b) COTTAGE PRAYER-MEETINGS.", "level": "h3"}
+  ],
+  "italics": []
+}

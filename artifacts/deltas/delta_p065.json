@@ -1,0 +1,12 @@
+{
+  "drop": ["64 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Tuis Prety", "right": "This Piety"},
+    {"wrong": "ConsTANT", "right": "Constant"}
+  ],
+  "headings": [
+    {"text": "HOW THE PIETY OF THE MINISTER MAY BE CULTIVATED.", "level": "h2"},
+    {"text": "(a) THIS PIETY TO BE CULTIVATED BY CONSTANT PRAYER.", "level": "h3"}
+  ],
+  "italics": []
+}

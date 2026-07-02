@@ -1,0 +1,9 @@
+{
+  "drop": ["102 THE PASTOR"],
+  "fixes": [
+    {"wrong": "afternoon im visiting", "right": "afternoon in visiting"},
+    {"wrong": "which he between", "right": "which lie between"}
+  ],
+  "headings": [],
+  "italics": ["How many hours a day should be devoted to study?"]
+}

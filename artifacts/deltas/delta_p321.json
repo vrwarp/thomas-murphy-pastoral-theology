@@ -1,0 +1,9 @@
+{
+  "drop": ["320 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "‘This kind", "right": "This kind"},
+    {"wrong": "(0) It extends", "right": "(b) It extends"}
+  ],
+  "headings": [],
+  "italics": []
+}

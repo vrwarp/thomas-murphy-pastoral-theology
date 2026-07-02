@@ -1,0 +1,8 @@
+{
+  "drop": ["4156 THE PASTOR"],
+  "fixes": [
+    {"wrong": "mectings", "right": "meetings"}
+  ],
+  "headings": [],
+  "italics": ["Committee on benevolence", "Committee on music", "Committee on prayer-meetings", "Committee on the poor"]
+}

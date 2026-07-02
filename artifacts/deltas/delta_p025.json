@@ -1,0 +1,12 @@
+{
+  "drop": ["24 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "ceonomized", "right": "economized"},
+    {"wrong": "chureh,", "right": "church,"},
+    {"wrong": "instrue-", "right": "instruc-"}
+  ],
+  "headings": [
+    {"text": "IMPORTANCE OF THE OFFICE, AND OF THIS PREPARATION FOR IT.", "level": "h2"}
+  ],
+  "italics": []
+}

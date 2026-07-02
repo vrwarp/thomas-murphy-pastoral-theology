@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE CLOSET.", "55"],
+  "fixes": [
+    {"wrong": "‘The wear and tear", "right": "The wear and tear"}
+  ],
+  "headings": [],
+  "italics": []
+}

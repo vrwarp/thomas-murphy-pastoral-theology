@@ -1,0 +1,13 @@
+{
+  "drop": ["_ PROGRESS OF THE CHURCH. 347"],
+  "fixes": [
+    {"wrong": "undoubledly", "right": "undoubtedly"},
+    {"wrong": "to be tried, Their", "right": "to be tried. Their"},
+    {"wrong": "it will take’", "right": "it will take"}
+  ],
+  "headings": [],
+  "italics": [
+    "there ought to be more care bestowed on them than on any other class of members in the church",
+    "Some method or methods should be contrived by which to interest them in the study of the Scriptures"
+  ]
+}

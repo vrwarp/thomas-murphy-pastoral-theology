@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE PULPIT. 153", "20"],
+  "fixes": [
+    {"wrong": "fcolishness", "right": "foolishness"}
+  ],
+  "headings": [],
+  "italics": []
+}

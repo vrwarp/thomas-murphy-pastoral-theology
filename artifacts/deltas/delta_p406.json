@@ -1,0 +1,8 @@
+{
+  "drop": ["SABBATH-SCHOOL.", "405"],
+  "fixes": [
+    {"wrong": "that_it", "right": "that it"}
+  ],
+  "headings": [],
+  "italics": []
+}

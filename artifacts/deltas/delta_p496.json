@@ -1,0 +1,11 @@
+{
+  "drop": ["RELATIONS TO OTHER DENOMINATIONS. 495"],
+  "fixes": [
+    {"wrong": "amore abundant", "right": "a more abundant"}
+  ],
+  "headings": [
+    {"text": "PROSELYTING.", "level": "h2"},
+    {"text": "(a) WHEN WRONG.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,8 @@
+{
+  "drop": ["282 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "the faeulty", "right": "the faculty"}
+  ],
+  "headings": [],
+  "italics": []
+}

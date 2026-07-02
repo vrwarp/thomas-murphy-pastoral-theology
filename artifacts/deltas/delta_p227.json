@@ -1,0 +1,9 @@
+{
+  "drop": ["226 THE PASTOR"],
+  "fixes": [
+    {"wrong": "instrue-\ntion", "right": "instruc-\ntion"},
+    {"wrong": "assist.", "right": "assist"}
+  ],
+  "headings": [],
+  "italics": []
+}

@@ -1,0 +1,9 @@
+{
+  "drop": ["446 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "4, The next plan", "right": "4. The next plan"},
+    {"wrong": "eause", "right": "cause"}
+  ],
+  "headings": [],
+  "italics": ["The foundation-fund plan", "cards properly prepared with space for each Board, and asking them to fill them up with their names and the sums they will give to each cause"]
+}

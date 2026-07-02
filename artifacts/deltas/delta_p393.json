@@ -1,0 +1,12 @@
+{
+  "drop": ["392 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "lic hidden", "right": "lie hidden"},
+    {"wrong": "Subbath-\nschool work", "right": "Sabbath-\nschool work"},
+    {"wrong": "Sabbath-sehool", "right": "Sabbath-school"}
+  ],
+  "headings": [
+    {"text": "(c) Catechetical Instruction.", "level": "h3"}
+  ],
+  "italics": []
+}

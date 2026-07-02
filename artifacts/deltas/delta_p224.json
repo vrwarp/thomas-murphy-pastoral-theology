@@ -1,0 +1,8 @@
+{
+  "drop": ["CHAPTER V.", "THE PASTOR IN HIS PERSONAL PAROCHIAL", "WORK.", "223"],
+  "fixes": [
+    {"wrong": "Preacurne", "right": "Preaching"}
+  ],
+  "headings": [],
+  "italics": []
+}

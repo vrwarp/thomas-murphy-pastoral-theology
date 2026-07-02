@@ -1,0 +1,9 @@
+{
+  "drop": [", ACTIVITIES OF THE CHURCH. 275"],
+  "fixes": [
+    {"wrong": "and _ his", "right": "and his"},
+    {"wrong": "Tt will inevitably", "right": "It will inevitably"}
+  ],
+  "headings": [],
+  "italics": []
+}

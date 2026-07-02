@@ -1,0 +1,10 @@
+{
+  "drop": ["274 THE PASTOR IN THE '"],
+  "fixes": [
+    {"wrong":"be ~", "right":"be"},
+    {"wrong":"He did but |", "right":"He did but"},
+    {"wrong":"The Rev. Dr.”", "right":"The Rev. Dr."}
+  ],
+  "headings": [],
+  "italics": []
+}

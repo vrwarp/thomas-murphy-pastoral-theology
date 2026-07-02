@@ -1,0 +1,9 @@
+{
+  "drop": ["486 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "it is ike Chrisé to", "right": "it is like Christ to"}
+  ],
+  "headings": [],
+  "italics": ["men", "Christ"]
+}
+

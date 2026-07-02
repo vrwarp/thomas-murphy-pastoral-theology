@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE PULPIT. 187"],
+  "fixes": [
+    {"wrong": "Doreas raised", "right": "Dorcas raised"},
+    {"wrong": "16.’ Brotherly", "right": "16. Brotherly"}
+  ],
+  "headings": [],
+  "italics": ["Great Duties of Religion", "Leading Events of Apostolic History", "versus"]
+}

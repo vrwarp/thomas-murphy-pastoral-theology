@@ -1,0 +1,10 @@
+{
+  "drop": ["HIGHER COURTS OF THE CHURCH. 487"],
+  "fixes": [
+    {"wrong": "recieved", "right": "received"}
+  ],
+  "headings": [
+    {"text": "WRITING LETTERS AS A PRESBYTER.", "level": "h2"}
+  ],
+  "italics": []
+}

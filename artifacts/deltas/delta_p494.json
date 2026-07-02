@@ -1,0 +1,10 @@
+{
+  "drop": ["RELATIONS TO OTHER DENOMINATIONS. 493"],
+  "fixes": [
+    {"wrong": "fee] toward", "right": "feel toward"}
+  ],
+  "headings": [
+    {"text": "EXCHANGING PULPITS.", "level": "h2"}
+  ],
+  "italics": []
+}

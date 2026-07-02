@@ -1,0 +1,11 @@
+{
+  "drop": ["CHAPTER VII.", "THE PASTOR IN THE PROGRESS OF THE CHURCH.", "326"],
+  "fixes": [
+    {"wrong": "ain of his whole ministry", "right": "aim of his whole ministry"},
+    {"wrong": ": PROGRESS ESSENTIAL.", "right": "PROGRESS ESSENTIAL."}
+  ],
+  "headings": [
+    {"text": "PROGRESS ESSENTIAL.", "level": "h2"}
+  ],
+  "italics": []
+}

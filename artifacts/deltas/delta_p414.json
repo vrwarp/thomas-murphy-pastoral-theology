@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL. 413"],
+  "fixes": [
+    {"wrong": "very highly reecom-\nmend", "right": "very highly recom-\nmend"}
+  ],
+  "headings": [
+    {"text": "(i) PRAYER-MEETING BEFORE OR AFTER THE EXERCISES OF THE SCHOOL.", "level": "h3"}
+  ],
+  "italics": []
+}

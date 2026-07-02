@@ -1,0 +1,10 @@
+{
+  "drop": ["BENEVOLENT WORK OF THE CHURCH.", "437"],
+  "fixes": [
+    {"wrong": "so todo", "right": "so to do"}
+  ],
+  "headings": [
+    {"text": "(b) The More There Is Contributed To The Boards, The More There Will Be Given To One's Own Church.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,12 @@
+{
+  "drop": ["SABBATH-SCHOOL. 377", "48"],
+  "fixes": [
+    {"wrong": "dnties", "right": "duties"},
+    {"wrong": "Sabbath- school", "right": "Sabbath-school"}
+  ],
+  "headings": [],
+  "italics": [
+    "All the members of the session, the minister included, should be connected with the Sabbath-school.",
+    "One of the elders ought always, if practicable, to be the superintendent of the Sabbath-school."
+  ]
+}

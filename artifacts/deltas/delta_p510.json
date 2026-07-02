@@ -1,0 +1,13 @@
+{
+  "drop": ["INDEX. 509"],
+  "fixes": [
+    {"wrong": "eer echonl furnishes a field of,", "right": "Sabbath-school furnishes a field of,"},
+    {"wrong": "shonld be induced", "right": "should be induced"}
+  ],
+  "headings": [
+    {"text": "V.", "level": "h2"},
+    {"text": "W.", "level": "h2"},
+    {"text": "Y.", "level": "h2"}
+  ],
+  "italics": []
+}

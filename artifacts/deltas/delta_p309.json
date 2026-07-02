@@ -1,0 +1,8 @@
+{
+  "drop": ["308 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "~ eall attention", "right": "call attention"}
+  ],
+  "headings": [],
+  "italics": ["Brevity is essential to the life and interest of the prayer-meeting."]
+}

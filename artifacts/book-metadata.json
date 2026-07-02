@@ -1,0 +1,54 @@
+{
+  "work": {
+    "title": "Pastoral Theology: The Pastor in the Various Duties of His Office",
+    "author": "Thomas Murphy, D.D. (1823-1900)",
+    "publisher": "Presbyterian Board of Publication, Philadelphia",
+    "year": 1877,
+    "rights": "Public domain"
+  },
+  "source": {
+    "kind": "scanned PDF (page images + unreliable embedded OCR layer)",
+    "url": "http://library.logcollegepress.com/Murphy%2C+Thomas%2C+Pastoral+Theology+A.pdf",
+    "distributor": "Log College Press",
+    "internet_archive_item": "pastoraltheology00murp",
+    "held_by": "Princeton Theological Seminary",
+    "pdf_page_count": 512
+  },
+  "edition": {
+    "format": "EPUB 3 (reflowable)",
+    "prepared": "2026-07",
+    "produced_with": "Claude Code",
+    "models": {
+      "orchestration": "Claude Opus 4.8 (claude-opus-4-8)",
+      "per_page_proofreading": "Claude Sonnet, medium reasoning effort (one agent per page)",
+      "ocr": "Tesseract 4.1.1 (LSTM), 300 dpi grayscale, --psm 6 --oem 1 -l eng"
+    },
+    "method_note": "Text is Tesseract OCR corrected by image-grounded AI proofreading deltas, not model-generated verbatim text (which Anthropic's content filter blocks).",
+    "approx_word_count": 146000
+  },
+  "structure": {
+    "page_index_base": 0,
+    "front_matter": {"title_page": 2, "copyright": 3, "preface": [4, 7], "printed_contents": [8, 13]},
+    "body_pages": [14, 501],
+    "index_pages": [502, 510],
+    "chapters": [
+      {"num": "I",    "opener_page": 14,  "title": "Nature and Importance of Pastoral Theology"},
+      {"num": "II",   "opener_page": 38,  "title": "The Pastor in His Closet"},
+      {"num": "III",  "opener_page": 92,  "title": "The Pastor in the Study"},
+      {"num": "IV",   "opener_page": 152, "title": "The Pastor in the Pulpit"},
+      {"num": "V",    "opener_page": 224, "title": "The Pastor in His Personal Parochial Work"},
+      {"num": "VI",   "opener_page": 274, "title": "The Pastor in the Activities of the Church"},
+      {"num": "VII",  "opener_page": 327, "title": "The Pastor in the Progress of the Church"},
+      {"num": "VIII", "opener_page": 361, "title": "The Pastor in the Sabbath-School"},
+      {"num": "IX",   "opener_page": 428, "title": "The Pastor in the Benevolent Work of the Church"},
+      {"num": "X",    "opener_page": 451, "title": "The Pastor in the Session"},
+      {"num": "XI",   "opener_page": 472, "title": "The Pastor in the Higher Courts of the Church"},
+      {"num": "XII",  "opener_page": 492, "title": "The Pastor in His Relations to Other Denominations"}
+    ]
+  },
+  "artifacts": {
+    "ocr": "artifacts/ocr/p<NNN>.txt — Tesseract OCR text per page (501 files)",
+    "deltas": "artifacts/deltas/delta_p<NNN>.json — per-page AI proofreading deltas (501 files)",
+    "sections": "artifacts/sections/sec_p<NNN>.html — reconstructed page fragments (501 files)"
+  }
+}

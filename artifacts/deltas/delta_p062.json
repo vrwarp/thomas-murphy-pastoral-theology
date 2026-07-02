@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE CLOSET. 61"],
+  "fixes": [
+    {"wrong": "easily,.be", "right": "easily be"}
+  ],
+  "headings": [],
+  "italics": []
+}

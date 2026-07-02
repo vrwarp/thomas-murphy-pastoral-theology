@@ -1,0 +1,11 @@
+{
+  "drop": ["80 THE PASTOR"],
+  "fixes": [
+    {"wrong": "deficiences", "right": "deficiencies"},
+    {"wrong": "hinderances", "right": "hindrances"},
+    {"wrong": "nourishinent", "right": "nourishment"},
+    {"wrong": "‘To see", "right": "To see"}
+  ],
+  "headings": [],
+  "italics": []
+}

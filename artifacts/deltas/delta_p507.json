@@ -1,0 +1,8 @@
+{
+  "drop": ["506 INDEX."],
+  "fixes": [
+    {"wrong": "winister’s chief calling", "right": "minister’s chief calling"}
+  ],
+  "headings": [],
+  "italics": []
+}

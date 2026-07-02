@@ -1,0 +1,11 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH.", "349"],
+  "fixes": [
+    {"wrong": "andibly", "right": "audibly"},
+    {"wrong": "Itis", "right": "It is"},
+    {"wrong": "‘They should be in small", "right": "They should be in small"},
+    {"wrong": "Jook", "right": "look"}
+  ],
+  "headings": [],
+  "italics": ["Young converts should be carefully noticed by pastor, elders and other members of the church.", "It is an excellent plan occasionally to invite the young converts, in small companies, to spend a social evening with the pastor and his family."]
+}

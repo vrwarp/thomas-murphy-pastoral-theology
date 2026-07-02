@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL, 373"],
+  "fixes": [
+    {"wrong": "promiment", "right": "prominent"}
+  ],
+  "headings": [
+    {"text": "RELATION OF THE SABBATH-SCHOOL TO THE CHURCH.", "level": "h2"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 297", "38"],
+  "fixes": [
+    {"wrong": "sinfuluess", "right": "sinfulness"}
+  ],
+  "headings": [
+    {"text": "ATTENTION TO STRANGERS.", "level": "h2"}
+  ],
+  "italics": []
+}

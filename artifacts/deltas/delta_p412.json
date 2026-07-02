@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL.", "411"],
+  "fixes": [
+    {"wrong": "Tue Lisrary", "right": "The Library"}
+  ],
+  "headings": [
+    {"text": "(h) The Library.", "level": "h3"}
+  ],
+  "italics": []
+}

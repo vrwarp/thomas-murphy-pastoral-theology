@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE SESSION. 457", "58"],
+  "fixes": [
+    {"wrong": "aud where,", "right": "and where,"}
+  ],
+  "headings": [
+    {"text": "B. OVERSIGHT OF THE FAMILIES OF THE CONGREGATION.", "level": "h2"}
+  ],
+  "italics": ["Committee on Sabbath-schools", "Committee on strangers"]
+}

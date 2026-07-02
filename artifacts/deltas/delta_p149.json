@@ -1,0 +1,9 @@
+{
+  "drop": ["148 THE PASTOR"],
+  "fixes": [
+    {"wrong": "whieh should stimulate", "right": "which should stimulate"},
+    {"wrong": "the Chureh, he must", "right": "the Church, he must"}
+  ],
+  "headings": [],
+  "italics": []
+}

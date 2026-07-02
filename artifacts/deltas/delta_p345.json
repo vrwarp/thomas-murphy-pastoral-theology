@@ -1,0 +1,10 @@
+{
+  "drop": ["3d THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "eaution", "right": "caution"}
+  ],
+  "headings": [
+    {"text": "(g) Danger of Reaction.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["142 THE PASTOR"],
+  "fixes": [
+    {"wrong": "recelve", "right": "receive"},
+    {"wrong": "yalue", "right": "value"},
+    {"wrong": "‘Too much matter", "right": "Too much matter"}
+  ],
+  "headings": [],
+  "italics": ["Index Rerum"]
+}

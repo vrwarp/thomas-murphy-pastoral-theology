@@ -1,0 +1,9 @@
+{
+  "drop": ["44 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Tn a certain", "right": "In a certain"},
+    {"wrong": "people,O Lord", "right": "people, O Lord"}
+  ],
+  "headings": [],
+  "italics": []
+}

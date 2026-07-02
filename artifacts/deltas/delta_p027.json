@@ -1,0 +1,9 @@
+{
+  "drop": [ "26 PASTORAL THEOLOGY." ],
+  "fixes": [
+    {"wrong": "sonie-", "right": "some-"},
+    {"wrong": "risé up", "right": "rise up"}
+  ],
+  "headings": [],
+  "italics": []
+}

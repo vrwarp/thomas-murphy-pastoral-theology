@@ -1,0 +1,11 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 243"],
+  "fixes": [
+    {"wrong": "‘To read", "right": "To read"},
+    {"wrong": "‘There should", "right": "There should"},
+    {"wrong": "Lt is a yood plan", "right": "It is a good plan"},
+    {"wrong": "‘The plan will be", "right": "The plan will be"}
+  ],
+  "headings": [],
+  "italics": ["It is a good plan to preach little sermons sometimes when patients are in such condition that they can listen."]
+}

@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE STUDY. 149"],
+  "fixes": [
+    {"wrong": "us: ‘‘ Unto", "right": "us: \" Unto"},
+    {"wrong": "without Jaw to", "right": "without law to"}
+  ],
+  "headings": [],
+  "italics": []
+}

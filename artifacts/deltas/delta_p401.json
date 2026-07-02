@@ -1,0 +1,9 @@
+{
+  "drop": ["400 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Tt is only selfishness", "right": "It is only selfishness"},
+    {"wrong": "any -\nchurch", "right": "any\nchurch"}
+  ],
+  "headings": [],
+  "italics": []
+}

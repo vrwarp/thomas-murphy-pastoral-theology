@@ -1,0 +1,9 @@
+{
+  "drop": ["232 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Tt can be done", "right": "It can be done"},
+    {"wrong": "overeome", "right": "overcome"}
+  ],
+  "headings": [],
+  "italics": []
+}

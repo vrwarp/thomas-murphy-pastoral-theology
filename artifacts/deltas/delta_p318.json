@@ -1,0 +1,11 @@
+{
+  "drop": [
+    "ACTIVITIES OF THE CHURCH. 317"
+  ],
+  "fixes": [
+    {"wrong": "social religions communion", "right": "social religious communion"},
+    {"wrong": "It is acompany", "right": "It is a company"}
+  ],
+  "headings": [],
+  "italics": []
+}

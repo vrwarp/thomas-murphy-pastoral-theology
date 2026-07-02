@@ -1,0 +1,12 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHTAL WORK. 253"],
+  "fixes": [
+    {"wrong": "PAROCHTAL", "right": "PAROCHIAL"},
+    {"wrong": "‘The promise of God", "right": "The promise of God"},
+    {"wrong": "‘To guide them", "right": "To guide them"}
+  ],
+  "headings": [
+    {"text": "MINISTERING TO AWAKENED SOULS.", "level": "h2"}
+  ],
+  "italics": []
+}

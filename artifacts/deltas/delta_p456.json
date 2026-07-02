@@ -1,0 +1,11 @@
+{
+  "drop": ["IN THE SESSION. 459"],
+  "fixes": [
+    {"wrong": "prayer-mectings", "right": "prayer-meetings"}
+  ],
+  "headings": [
+    {"text": "PLAN OF SESSIONAL WORK.", "level": "h2"},
+    {"text": "A. DIVISION OF SESSIONAL WORK.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,8 @@
+# Regenerable working files (page images, build tree). Recreate with tools/run_ocr.sh
+# and tools/assemble.py — see README.md.
+work/
+
+# Python / OS cruft
+__pycache__/
+*.pyc
+.DS_Store

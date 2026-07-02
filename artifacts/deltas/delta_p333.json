@@ -1,0 +1,11 @@
+{
+  "drop": ["332 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "and_ powerful", "right": "and powerful"},
+    {"wrong": "extraet", "right": "extract"},
+    {"wrong": "Levivals", "right": "Revivals"},
+    {"wrong": "whieh", "right": "which"}
+  ],
+  "headings": [],
+  "italics": ["Revivals of the Eighteenth Century"]
+}

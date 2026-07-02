@@ -1,0 +1,10 @@
+{
+  "drop": ["PROGRESS OF THE CHURCH. 335"],
+  "fixes": [
+    {"wrong": "THe PASTOR HIMSELF SHOULD pO THE Most oF THE", "right": "THE PASTOR HIMSELF SHOULD DO THE MOST OF THE"}
+  ],
+  "headings": [
+    {"text": "(b) THE PASTOR HIMSELF SHOULD DO THE MOST OF THE PREACHING.", "level": "h3"}
+  ],
+  "italics": []
+}

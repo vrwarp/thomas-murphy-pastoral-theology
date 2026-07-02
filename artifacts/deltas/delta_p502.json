@@ -1,0 +1,16 @@
+{
+  "drop": ["INDEX.", "501"],
+  "fixes": [
+    {"wrong": "Activitres", "right": "ACTIVITIES"},
+    {"wrong": "Afilicted", "right": "Afflicted"},
+    {"wrong": "BaprisM", "right": "BAPTISM"},
+    {"wrong": "482;", "right": "432;"},
+    {"wrong": "up for each cause, £35,", "right": "up for each cause, 435."},
+    {"wrong": "converts, 548.", "right": "converts, 348."}
+  ],
+  "headings": [
+    {"text": "A.", "level": "h2"},
+    {"text": "B.", "level": "h2"}
+  ],
+  "italics": []
+}

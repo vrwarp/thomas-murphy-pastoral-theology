@@ -1,0 +1,8 @@
+{
+  "drop": ["252 THE PASTOR"],
+  "fixes": [
+    {"wrong": "shouid still", "right": "should still"}
+  ],
+  "headings": [],
+  "italics": []
+}

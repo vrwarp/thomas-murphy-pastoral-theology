@@ -1,0 +1,10 @@
+{
+  "drop": ["160 - THE PASTOR"],
+  "fixes": [
+    {"wrong": "Seriptures", "right": "Scriptures"},
+    {"wrong": "suecessfully resist", "right": "successfully resist"},
+    {"wrong": "more suecessfully attracted", "right": "more successfully attracted"}
+  ],
+  "headings": [],
+  "italics": []
+}

@@ -1,0 +1,8 @@
+{
+  "drop": ["412 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "both lawful and _ profitable.", "right": "both lawful and profitable."}
+  ],
+  "headings": [],
+  "italics": ["Pilgrim's Progress"]
+}

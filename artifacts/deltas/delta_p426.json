@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL. 425", "54"],
+  "fixes": [
+    {"wrong": "(ec) PROMOTING", "right": "(e) PROMOTING"}
+  ],
+  "headings": [
+    {"text": "(e) PROMOTING THE INTERESTS OF THE SABBATH-SCHOOL THROUGH THE CONGREGATION.", "level": "h3"}
+  ],
+  "italics": []
+}

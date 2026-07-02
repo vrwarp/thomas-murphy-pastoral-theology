@@ -1,0 +1,11 @@
+{
+  "drop": ["SABBATH-SCHOOL. 361", "46"],
+  "fixes": [
+    {"wrong": "‘These are questions", "right": "These are questions"},
+    {"wrong": "Jé is a trite saying", "right": "It is a trite saying"}
+  ],
+  "headings": [
+    {"text": "IMPORTANCE OF THE SABBATH-SCHOOL.", "level": "h2"}
+  ],
+  "italics": []
+}

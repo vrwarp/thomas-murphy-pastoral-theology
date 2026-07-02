@@ -1,0 +1,10 @@
+{
+  "drop": ["386 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Tae Training", "right": "The Training"}
+  ],
+  "headings": [
+    {"text": "(c) THE TRAINING OF THE CHILDREN IN BENEVOLENCE.", "level": "h3"}
+  ],
+  "italics": []
+}

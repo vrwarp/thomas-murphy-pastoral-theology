@@ -1,0 +1,11 @@
+{
+  "drop": ["260 THE PASTOR", "260"],
+  "fixes": [
+    {"wrong": "saine general", "right": "same general"},
+    {"wrong": "‘These are the", "right": "These are the"}
+  ],
+  "headings": [
+    {"text": "ATTENDING FUNERALS.", "level": "h2"}
+  ],
+  "italics": []
+}

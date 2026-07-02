@@ -1,0 +1,11 @@
+{
+  "drop": ["76 THE PASTOR"],
+  "fixes": [
+    {"wrong":"Prery Increaseb", "right":"Piety Increased"},
+    {"wrong":"THE DeEvoTIONAL", "right":"THE DEVOTIONAL"}
+  ],
+  "headings": [
+    {"text":"(c) PIETY INCREASED BY THE DEVOTIONAL READING OF THE SCRIPTURES.", "level":"h3"}
+  ],
+  "italics": []
+}

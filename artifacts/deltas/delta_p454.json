@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE SESSION. 4535"],
+  "fixes": [
+    {"wrong": "‘There are many", "right": "There are many"},
+    {"wrong": "hin diligently", "right": "him diligently"},
+    {"wrong": "to be -\nunhappy", "right": "to be\nunhappy"}
+  ],
+  "headings": [],
+  "italics": []
+}

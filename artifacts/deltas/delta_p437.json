@@ -1,0 +1,11 @@
+{
+  "drop": ["436 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "(2) THe Unrrep Wispom", "right": "(a) The United Wisdom"},
+    {"wrong": "Tt should be remembered", "right": "It should be remembered"}
+  ],
+  "headings": [
+    {"text": "(a) The United Wisdom of the Whole Church, Surveying the Entire Field, Has Fixed on Them.", "level": "h3"}
+  ],
+  "italics": []
+}

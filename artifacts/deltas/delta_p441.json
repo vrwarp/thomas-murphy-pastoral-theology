@@ -1,0 +1,10 @@
+{
+  "drop": ["440 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "EsraBiisueD Boarps", "right": "Established Boards"}
+  ],
+  "headings": [
+    {"text": "(c) COLLECTIONS SHOULD BE GIVEN TO THE CHURCH'S OWN ESTABLISHED BOARDS.", "level": "h3"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["350 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Jt might", "right": "It might"},
+    {"wrong": "thaé", "right": "that"},
+    {"wrong": "planned out’", "right": "planned out"}
+  ],
+  "headings": [],
+  "italics": ["It might be well to assign each young convert by name to some elder or other influential member of the church, male or female, who would have it as a special care to watch over his spiritual interests.", "that", "they will be expected, as a matter of course, to attend the prayer-meetings, as well as the more public services of the church."]
+}

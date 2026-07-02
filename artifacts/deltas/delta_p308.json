@@ -1,0 +1,8 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 307"],
+  "fixes": [
+    {"wrong": "coldness east over", "right": "coldness cast over"}
+  ],
+  "headings": [],
+  "italics": ["The people should all be seated near to the leader of the meeting,"]
+}

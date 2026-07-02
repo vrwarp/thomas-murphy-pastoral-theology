@@ -1,0 +1,9 @@
+{
+  "drop": ["146 THE PASTOR"],
+  "fixes": [
+    {"wrong": "Spurgeon’s Sermon’s", "right": "Spurgeon’s Sermons"},
+    {"wrong": "ander,\n\n10.", "right": "ander.\n\n10."}
+  ],
+  "headings": [],
+  "italics": ["Sermons", "Practical Piety", "Christian Biography", "Great Puritan Writers", "On Sabbath-school Work"]
+}

@@ -1,0 +1,10 @@
+{
+  "drop": ["302 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "‘They intermit", "right": "They intermit"}
+  ],
+  "headings": [
+    {"text": "PRAYER-MEETINGS.", "level": "h2"}
+  ],
+  "italics": []
+}

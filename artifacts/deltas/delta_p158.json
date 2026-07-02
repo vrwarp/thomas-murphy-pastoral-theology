@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE PULPIT. 157"],
+  "fixes": [
+    {"wrong": "spiritual.’", "right": "spiritual.”"},
+    {"wrong": "‘This settles", "right": "This settles"}
+  ],
+  "headings": [],
+  "italics": []
+}

@@ -1,0 +1,13 @@
+{
+  "drop": ["434 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "mninisters", "right": "ministers"},
+    {"wrong": "It imust", "right": "It must"},
+    {"wrong": "cither", "right": "either"},
+    {"wrong": "(6) THe Pastor SHOULD COMMUNICATE THIS INFORMATION", "right": "(b) The Pastor should Communicate this Information"}
+  ],
+  "headings": [
+    {"text": "(b) The Pastor should Communicate this Information to the People.", "level": "h3"}
+  ],
+  "italics": []
+}

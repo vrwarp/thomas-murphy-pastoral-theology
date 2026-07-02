@@ -1,0 +1,11 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 261"],
+  "fixes": [
+    {"wrong": "[tis a great mistake", "right": "It is a great mistake"}
+  ],
+  "headings": [],
+  "italics": [
+    "It is a great mistake to make such addresses too long.",
+    "In speaking of the deceased at funerals we should beware of too much eulogium."
+  ]
+}

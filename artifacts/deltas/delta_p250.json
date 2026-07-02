@@ -1,0 +1,9 @@
+{
+  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 249", "32"],
+  "fixes": [
+    {"wrong": "Their -\nhearts", "right": "Their\nhearts"},
+    {"wrong": "eultivate", "right": "cultivate"}
+  ],
+  "headings": [],
+  "italics": []
+}

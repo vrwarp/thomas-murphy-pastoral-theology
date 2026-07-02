@@ -1,0 +1,12 @@
+{
+  "drop": ["234 THE PASTOR"],
+  "fixes": [
+    {"wrong": "‘There is also great difference", "right": "There is also great difference"},
+    {"wrong": "plaees", "right": "places"},
+    {"wrong": "dueting", "right": "ducting"},
+    {"wrong": "whieh", "right": "which"},
+    {"wrong": "scareely", "right": "scarcely"}
+  ],
+  "headings": [],
+  "italics": []
+}

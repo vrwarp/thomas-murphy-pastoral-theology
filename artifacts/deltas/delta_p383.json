@@ -1,0 +1,11 @@
+{
+  "drop": ["382 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "sce what", "right": "see what"}
+  ],
+  "headings": [
+    {"text": "DIRECT AIMS OF THE SABBATH-SCHOOL.", "level": "h2"},
+    {"text": "(a) THE CONVERSION OF THE SCHOLARS.", "level": "h3"}
+  ],
+  "italics": []
+}

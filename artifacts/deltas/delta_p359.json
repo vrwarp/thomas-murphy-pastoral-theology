@@ -1,0 +1,8 @@
+{
+  "drop": ["358 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "It isa", "right": "It is a"}
+  ],
+  "headings": [],
+  "italics": []
+}

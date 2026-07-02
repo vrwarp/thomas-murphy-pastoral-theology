@@ -1,0 +1,10 @@
+{
+  "drop": ["IN THE PULPIT. 207"],
+  "fixes": [
+    {"wrong": "(0) that it is intended", "right": "(b) that it is intended"}
+  ],
+  "headings": [
+    {"text": "PUBLIC PRAYER.", "level": "h2"}
+  ],
+  "italics": []
+}

@@ -1,0 +1,9 @@
+{
+  "drop": ["IN THE CLOSET. ol", "51"],
+  "fixes": [
+    {"wrong": "IN THE CLOSET. ol", "right": "IN THE CLOSET."},
+    {"wrong": "In none of them", "right": "in none of them"}
+  ],
+  "headings": [],
+  "italics": []
+}

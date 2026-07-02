@@ -1,0 +1,8 @@
+{
+  "drop": ["IN THE PULPIT. 161", "21"],
+  "fixes": [
+    {"wrong": "sacred yolume. ‘This was true", "right": "sacred volume. This was true"}
+  ],
+  "headings": [],
+  "italics": ["Hoc signo vinces"]
+}

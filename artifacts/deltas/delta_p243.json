@@ -1,0 +1,8 @@
+{
+  "drop": ["242 THE PASTOR"],
+  "fixes": [
+    {"wrong": "beeause", "right": "because"}
+  ],
+  "headings": [],
+  "italics": ["The Scriptures should often be read or passages quoted in these visits."]
+}

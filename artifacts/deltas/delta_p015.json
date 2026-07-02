@@ -1,0 +1,8 @@
+{
+  "drop": ["14 PASTORAL THEOLOGY."],
+  "fixes": [
+    {"wrong": "face to fuce", "right": "face to face"}
+  ],
+  "headings": [],
+  "italics": []
+}

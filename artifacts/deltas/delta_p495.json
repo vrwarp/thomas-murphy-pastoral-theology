@@ -1,0 +1,9 @@
+{
+  "drop": ["494 THE PASTOR IN HIS"],
+  "fixes": [
+    {"wrong": "asa guide", "right": "as a guide"},
+    {"wrong": "sufficent help", "right": "sufficient help"}
+  ],
+  "headings": [],
+  "italics": []
+}

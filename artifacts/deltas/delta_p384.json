@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL. 383"],
+  "fixes": [
+    {"wrong": "THe InpocrrtNaTION", "right": "THE INDOCTRINATION"}
+  ],
+  "headings": [
+    {"text": "(b) THE INDOCTRINATION OF THE SCHOLARS.", "level": "h3"}
+  ],
+  "italics": []
+}

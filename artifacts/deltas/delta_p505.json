@@ -1,0 +1,31 @@
+{
+  "drop": ["504 INDEX."],
+  "fixes": [
+    {"wrong": "mneh. of the Bible", "right": "much of the Bible"},
+    {"wrong": "Ts", "right": "I."},
+    {"wrong": "IMPROVEMENTS, in Sabbath-school\nwork, 406.\nJe", "right": "IMPROVEMENTS, in Sabbath-school\nwork, 406."},
+    {"wrong": "285,", "right": "285."},
+    {"wrong": "985, a leader, 45; must be active, 279,", "right": "285, a leader, 45; must be active, 279,"},
+    {"wrong": "Coe aS work, 45;", "right": "Minister, grandeur of his work, 45;"},
+    {"wrong": "Medi } ..", "right": ""},
+    {"wrong": "Me re De munietey a, 44.", "right": "Mediator, the minister a, 44."},
+    {"wrong": "am 128. 1 chi k", "right": "for, 128."},
+    {"wrong": "high estimate", "right": "high estimate"},
+    {"wrong": "Theology, 24; there should be a", "right": "Theology, 24; there should be a"},
+    {"wrong": "! e L., ’ os a eyes Ge A", "right": ""},
+    {"wrong": "eee eee 5", "right": ""},
+    {"wrong": "XK.", "right": "K."},
+    {"wrong": "Krnp feelings", "right": "KIND feelings"},
+    {"wrong": "Y\n\nMonthly concert", "right": "Monthly concert"},
+    {"wrong": "pean eelta", "right": ""},
+    {"wrong": "x ken 5", "right": ""}
+  ],
+  "headings": [
+    {"text": "I.", "level": "h2"},
+    {"text": "K.", "level": "h2"},
+    {"text": "L.", "level": "h2"},
+    {"text": "M.", "level": "h2"},
+    {"text": "N.", "level": "h2"}
+  ],
+  "italics": []
+}

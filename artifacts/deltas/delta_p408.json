@@ -1,0 +1,10 @@
+{
+  "drop": ["SABBATH-SCHOOL. 407"],
+  "fixes": [
+    {"wrong": "instruet", "right": "instruct"},
+    {"wrong": "Chureh", "right": "Church"},
+    {"wrong": "earefully", "right": "carefully"}
+  ],
+  "headings": [],
+  "italics": []
+}

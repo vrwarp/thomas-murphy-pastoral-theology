@@ -1,0 +1,13 @@
+{
+  "drop": ["410 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "John §S. Hart", "right": "John S. Hart"},
+    {"wrong": "adyanta-", "right": "advanta-"},
+    {"wrong": "great se-\neret", "right": "great se-\ncret"},
+    {"wrong": "Promprness", "right": "Promptness"}
+  ],
+  "headings": [
+    {"text": "(g) Promptness in Everything.", "level": "h3"}
+  ],
+  "italics": []
+}

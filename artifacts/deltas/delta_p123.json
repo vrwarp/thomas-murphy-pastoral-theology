@@ -1,0 +1,10 @@
+{
+  "drop": ["122 THE PASTOR"],
+  "fixes": [
+    {"wrong": "throngh", "right": "through"},
+    {"wrong": "dlustrations", "right": "illustrations"},
+    {"wrong": "Students Bible", "right": "Students' Bible"}
+  ],
+  "headings": [],
+  "italics": ["Students' Bible", "should be kept for the purpose of preserving interpretations or illustrations of scriptural passages which may be casually met with in reading, in conversation or in any other way."]
+}

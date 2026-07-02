@@ -1,0 +1,12 @@
+{
+  "drop": ["IN THE STUDY. 123"],
+  "fixes": [
+    {"wrong": "JI saw many new excellencies", "right": "I saw many new excellencies"},
+    {"wrong": "and more and moreease every time", "right": "and more and more ease every time"}
+  ],
+  "headings": [],
+  "italics": [
+    "A whole book of the Bible should be read continuously, and, if possible, at one sitting.",
+    "to have constantly on hand some book of the Bible for special study and analysis."
+  ]
+}

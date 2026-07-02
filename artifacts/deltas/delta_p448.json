@@ -1,0 +1,10 @@
+{
+  "drop": ["BENEVOLENT WORK OF THE CHURCH. 447"],
+  "fixes": [
+    {"wrong": "seriptural", "right": "scriptural"}
+  ],
+  "headings": [
+    {"text": "MONTHLY CONCERT.", "level": "h2"}
+  ],
+  "italics": ["Upon the first day of the week let every one of you lay by him in store, as God hath prospered him."]
+}

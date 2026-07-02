@@ -1,0 +1,9 @@
+{
+  "drop": ["372 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "“Tt is hardly", "right": "\"It is hardly"},
+    {"wrong": "imstructed", "right": "instructed"}
+  ],
+  "headings": [],
+  "italics": []
+}

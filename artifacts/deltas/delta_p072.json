@@ -1,0 +1,13 @@
+{
+  "drop": ["IN THE CLOSET. 71"],
+  "fixes": [
+    {"wrong": "mind their business both when they are ishing and when", "right": "mind their business both when they are fishing and when"},
+    {"wrong": "nets.’", "right": "nets.\""},
+    {"wrong": "(6) Prery To BE CuLTIVATED BY A Mornina Hour", "right": "(b) Piety to be Cultivated by a Morning Hour"},
+    {"wrong": "or DEVOTION.", "right": "of Devotion."}
+  ],
+  "headings": [
+    {"text": "(b) Piety to be Cultivated by a Morning Hour of Devotion.", "level": "h3"}
+  ],
+  "italics": ["fishers", "fishing"]
+}

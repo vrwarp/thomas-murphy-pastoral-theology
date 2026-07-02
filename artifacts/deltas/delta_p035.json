@@ -1,0 +1,13 @@
+{
+  "drop": [ "34 PASTORAL THEOLOGY." ],
+  "fixes": [
+    { "wrong": "“Take heed to the ministry\nwhich.thou hast received in the Lord, that thou fulfill\nit.”", "right": "“Take heed to the ministry which thou hast received in the Lord, that thou fulfil it.”" }
+  ],
+  "headings": [
+    { "text": "HOW THE SUBJECT SHOULD BE STUDIED.", "level": "h2" }
+  ],
+  "italics": [
+    "acquisition of knowledge as to the duties of their office as one of their most important pursuits",
+    "studied with all the thoroughness to which hope of success in the most blessed work would lead"
+  ]
+}

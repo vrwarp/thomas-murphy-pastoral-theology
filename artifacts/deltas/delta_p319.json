@@ -1,0 +1,10 @@
+{
+  "drop": ["318 THE PASTOR IN THE"],
+  "fixes": [
+    {"wrong": "Nor Too MANY", "right": "Not Too Many"}
+  ],
+  "headings": [
+    {"text": "(c) Not Too Many Prayer-Meetings.", "level": "h3"}
+  ],
+  "italics": []
+}

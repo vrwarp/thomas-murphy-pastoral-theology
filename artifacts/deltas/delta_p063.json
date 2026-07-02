@@ -1,0 +1,12 @@
+{
+  "drop": ["62 THE PASTOR"],
+  "fixes": [
+    {"wrong": "(hk) THE Pastor 1s WARRANTED", "right": "(h) THE PASTOR IS WARRANTED"},
+    {"wrong": "EMINENT GLORY IN THE HEAVENLY Wor p.", "right": "EMINENT GLORY IN THE HEAVENLY WORLD."},
+    {"wrong": "cheering conclusion: “'To every", "right": "cheering conclusion: “To every"}
+  ],
+  "headings": [
+    {"text": "(h) The Pastor is Warranted in Looking Forward to Eminent Glory in the Heavenly World.", "level": "h3"}
+  ],
+  "italics": []
+}

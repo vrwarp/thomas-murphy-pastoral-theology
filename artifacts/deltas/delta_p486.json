@@ -1,0 +1,10 @@
+{
+  "drop": ["HIGHER COURTS OF THE CHURCH. 485"],
+  "fixes": [
+    {"wrong": "‘There are some persons", "right": "There are some persons"},
+    {"wrong": "exercise of calin, Christian", "right": "exercise of calm, Christian"},
+    {"wrong": "found in Chirist’s servants", "right": "found in Christ’s servants"}
+  ],
+  "headings": [],
+  "italics": []
+}

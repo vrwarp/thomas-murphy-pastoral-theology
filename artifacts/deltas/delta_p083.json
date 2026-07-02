@@ -1,0 +1,13 @@
+{
+  "drop": ["82 THE PASTOR"],
+  "fixes": [
+    {"wrong": "lis soul", "right": "his soul"},
+    {"wrong": "holiness,", "right": "holiness."},
+    {"wrong": "in_ holiness", "right": "in holiness"},
+    {"wrong": "they Jose their power", "right": "they lose their power"}
+  ],
+  "headings": [
+    {"text": "HINDERANCES IN THE WAY OF MINISTERIAL PIETY.", "level": "h2"}
+  ],
+  "italics": ["the habit of looking upon spiritual things simply as a profession"]
+}

@@ -1,0 +1,13 @@
+{
+  "drop": ["508 INDEX."],
+  "fixes": [
+    {"wrong": "diffical-\nties", "right": "difficul-\nties"},
+    {"wrong": "yis- | iting", "right": "vis- | iting"},
+    {"wrong": "ay System", "right": "System"},
+    {"wrong": "ey-\nery church", "right": "ev-\nery church"}
+  ],
+  "headings": [
+    {"text": "T.", "level": "h2"}
+  ],
+  "italics": []
+}

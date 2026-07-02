@@ -1,0 +1,10 @@
+{
+  "drop": ["152 THE PASTOR"],
+  "fixes": [
+    {"wrong": "the ery of per-", "right": "the cry of per-"}
+  ],
+  "headings": [
+    {"text": "PREACHING, THE MINISTER'S CHIEF CALLING.", "level": "h2"}
+  ],
+  "italics": []
+}

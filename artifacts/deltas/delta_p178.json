@@ -1,0 +1,13 @@
+{
+  "drop": ["IN THE PULPIT. 177", "23"],
+  "fixes": [
+    {"wrong": "‘They are important", "right": "They are important"},
+    {"wrong": "‘The better in-", "right": "The better in-"},
+    {"wrong": "4, The people", "right": "4. The people"}
+  ],
+  "headings": [],
+  "italics": [
+    "the heart is affected through the understanding",
+    "that they may be assisted in maintaining the truth in its never-ending contest with error"
+  ]
+}

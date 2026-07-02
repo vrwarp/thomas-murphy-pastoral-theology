@@ -1,0 +1,11 @@
+{
+  "drop": ["ACTIVITIES OF THE CHURCH. 289", "37"],
+  "fixes": [
+    {"wrong": "Jeaders", "right": "leaders"},
+    {"wrong": "hberality", "right": "liberality"},
+    {"wrong": "‘There is no class", "right": "There is no class"},
+    {"wrong": "oceupy", "right": "occupy"}
+  ],
+  "headings": [],
+  "italics": []
+}
