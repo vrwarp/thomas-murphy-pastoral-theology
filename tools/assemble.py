@@ -145,6 +145,12 @@ nav#toc li { margin: 0.4em 0; text-align: left; }
 nav#toc a { text-decoration: none; color: inherit; }
 h2.idx-letter { font-weight: bold; font-variant: normal; margin: 1.3em 0 0.5em; letter-spacing: 0.12em; }
 .indexbody p.ie { text-indent: -1.1em; margin: 0.12em 0 0.12em 1.1em; text-align: left; }
+table.chrono { border-collapse: collapse; margin: 1.3em auto; font-size: 0.88em; line-height: 1.3; }
+table.chrono th, table.chrono td { border: 1px solid #777; padding: 0.12em 0.55em; vertical-align: top; }
+table.chrono th { font-variant: small-caps; font-weight: normal; text-align: center; }
+table.chrono td:nth-child(1), table.chrono th:nth-child(1) { text-align: left; }
+table.chrono td:nth-child(2), table.chrono td:nth-child(4) { text-align: right; }
+table.chrono td:nth-child(3) { text-align: left; }
 .about h2 { text-align: left; font-variant: normal; font-size: 1.12em; letter-spacing: 0; margin: 1.5em 0 0.4em; }
 .about p { text-indent: 0; margin: 0.7em 0; }
 .about a { color: inherit; }

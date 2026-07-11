@@ -72,6 +72,9 @@ artifacts/
   ocr/        p<NNN>.txt        Tesseract OCR text, one file per page  (input to step 2)
   deltas/     delta_p<NNN>.json Per-page AI proofreading metadata       (output of step 2)
   sections/   sec_p<NNN>.html   Reconstructed page fragments            (output of step 3)
+  overrides/  sec_p<NNN>.html   Hand-authored fragments for pages the automated pipeline
+                                cannot produce (e.g. the chronological table on p. 119 /
+                                index 120). When present, step 3 uses them verbatim.
 work/                            Regenerable images + build tree (git-ignored)
 ```
 
