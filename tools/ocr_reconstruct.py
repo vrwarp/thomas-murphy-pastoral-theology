@@ -296,7 +296,15 @@ def reconstruct(page, kind="body"):
     body_html = "\n".join(b[1] for b in html_blocks)
     return (body_html, starts_mid, ends_mid)
 
+OVERRIDES = os.path.join(ROOT, "artifacts", "overrides")   # hand-authored page fragments that
+#   the automated pipeline cannot produce (e.g. tables). If present, used verbatim.
+
 def write_page(page, kind="body"):
+    ov = os.path.join(OVERRIDES, "sec_p%03d.html" % page)
+    if os.path.exists(ov):
+        import shutil
+        shutil.copy(ov, os.path.join(OUT, "sec_p%03d.html" % page))
+        return True
     res = reconstruct(page, kind)
     if res is None:
         return False

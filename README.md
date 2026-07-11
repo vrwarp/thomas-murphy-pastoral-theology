@@ -72,6 +72,9 @@ artifacts/
   ocr/        p<NNN>.txt        Tesseract OCR text, one file per page  (input to step 2)
   deltas/     delta_p<NNN>.json Per-page AI proofreading metadata       (output of step 2)
   sections/   sec_p<NNN>.html   Reconstructed page fragments            (output of step 3)
+  overrides/  sec_p<NNN>.html   Hand-authored fragments for pages the automated pipeline
+                                cannot produce (e.g. the chronological table on p. 119 /
+                                index 120). When present, step 3 uses them verbatim.
 work/                            Regenerable images + build tree (git-ignored)
 ```
 
@@ -138,8 +141,10 @@ EPUB-structure checks (mimetype first + stored, consistent manifest/spine, resol
   OCR slip may remain across the ~146,000 words.
 - Formatting is best-effort: chapter titles, small-capital section headings, and italics are
   reproduced; some block quotations render as ordinary paragraphs.
-- Original page numbers are dropped (meaningless in reflowable text) **except inside the Index**,
-  where the numbers are the entries' data and refer to the original 1877 pagination.
+- Original page numbers are not shown inline, but every original page boundary is preserved as an
+  invisible **EPUB page-break marker** (`epub:type="pagebreak"`), exposed through a `page-list` nav and
+  a legacy NCX `pageList`. Supporting readers can show "print page N," jump to a print page, and keep
+  citations stable. The **Index's page numbers are live links** to those markers.
 - The cover is newly designed for this edition; the original scanned title page is preserved
   as a facsimile page at the front of the book.
 

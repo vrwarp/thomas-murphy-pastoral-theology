@@ -94,20 +94,53 @@ def join_boundary(left, right):
         return left + right
     return left + " " + right
 
-def stitch_pages(pages):
-    """Stitch a list of consecutive page indices, merging paragraphs across page seams."""
-    merged, prev_end, missing = [], False, []
+def printed_of(pg):
+    """Printed page number for a PDF page index (numbered pages only), else None.
+    Offset is -1 across preface (idx 4-7 -> 3-6), body (14-501 -> 13-500), index (502-510 -> 501-509)."""
+    if pg in PREFACE_PAGES or 14 <= pg <= 501 or pg in INDEX_PAGES:
+        return pg - 1
+    return None
+
+def pagebreak_span(n):
+    """An invisible EPUB 3 print-page marker for printed page n."""
+    return ('<span epub:type="pagebreak" role="doc-pagebreak" id="pg%d" '
+            'aria-label="%d" title="%d"></span>' % (n, n, n))
+
+def _insert_anchor(block, anchor):
+    """Place an inline anchor just inside the opening tag of a block element."""
+    m = re.match(r"(<[a-zA-Z][^>]*>)(.*)", block, re.S)
+    return (m.group(1) + anchor + m.group(2)) if m else (anchor + block)
+
+def stitch_pages(pages, anchors=True):
+    """Stitch consecutive page indices, merging paragraphs across seams. When `anchors`,
+    insert an invisible pagebreak marker at the start of each numbered page's content and
+    return the list of printed page numbers marked (in order)."""
+    merged, prev_end, missing, marks = [], False, [], []
     for pg in pages:
         res = read_page(pg)
         if res is None:
             missing.append(pg); prev_end = False; continue
         starts, ends, blocks = res
+        pn = printed_of(pg) if anchors else None
+        anchor = pagebreak_span(pn) if pn is not None else ""
+        if anchor:
+            marks.append(pn)
         if merged and prev_end and starts and blocks and is_p(merged[-1]) and is_p(blocks[0]):
-            merged[-1] = "<p>" + join_boundary(p_inner(merged[-1]), p_inner(blocks[0])) + "</p>"
+            # paragraph continues across the seam: put the marker at the join point
+            L, R = p_inner(merged[-1]).rstrip(), p_inner(blocks[0]).lstrip()
+            if re.search(r"[A-Za-z0-9]-$", L):
+                inner = L[:-1].rstrip() + anchor + R
+            elif L.endswith("—") or R.startswith("—"):
+                inner = L + anchor + R
+            else:
+                inner = L + (" " if anchor else "") + anchor + R if anchor else L + " " + R
+            merged[-1] = "<p>" + inner + "</p>"
             blocks = blocks[1:]
+        elif anchor and blocks:
+            blocks = [_insert_anchor(blocks[0], anchor)] + blocks[1:]
         merged.extend(blocks)
         prev_end = ends
-    return merged, missing
+    return merged, missing, marks
 
 # ------------------------------- styling ------------------------------------
 
@@ -145,6 +178,14 @@ nav#toc li { margin: 0.4em 0; text-align: left; }
 nav#toc a { text-decoration: none; color: inherit; }
 h2.idx-letter { font-weight: bold; font-variant: normal; margin: 1.3em 0 0.5em; letter-spacing: 0.12em; }
 .indexbody p.ie { text-indent: -1.1em; margin: 0.12em 0 0.12em 1.1em; text-align: left; }
+.indexbody a { color: inherit; text-decoration: none; }
+span[role="doc-pagebreak"] { display: none; }
+table.chrono { border-collapse: collapse; margin: 1.3em auto; font-size: 0.88em; line-height: 1.3; }
+table.chrono th, table.chrono td { border: 1px solid #777; padding: 0.12em 0.55em; vertical-align: top; }
+table.chrono th { font-variant: small-caps; font-weight: normal; text-align: center; }
+table.chrono td:nth-child(1), table.chrono th:nth-child(1) { text-align: left; }
+table.chrono td:nth-child(2), table.chrono td:nth-child(4) { text-align: right; }
+table.chrono td:nth-child(3) { text-align: left; }
 .about h2 { text-align: left; font-variant: normal; font-size: 1.12em; letter-spacing: 0; margin: 1.5em 0 0.4em; }
 .about p { text-indent: 0; margin: 0.7em 0; }
 .about a { color: inherit; }
@@ -166,14 +207,14 @@ def validate(s, label):
         print("  !! INVALID XML in %s: %s" % (label, str(e)[:200])); return False
 
 def chapter_doc(roman, title, a, b):
-    blocks, missing = stitch_pages(range(a, b + 1))
+    blocks, missing, marks = stitch_pages(range(a, b + 1))
     if missing:
         print("  Ch %s missing pages: %s" % (roman, missing))
     if not blocks:
-        return None, missing
+        return None, missing, marks
     head = ('<section epub:type="chapter">\n<div class="chapnum">CHAPTER %s.</div>\n'
             '<h1 class="chaptitle" id="ch%s">%s</h1>\n<hr class="rule"/>\n') % (roman, roman, html.escape(title))
-    return doc("Chapter %s. %s" % (roman, title), head + "\n".join(blocks) + "\n</section>"), missing
+    return doc("Chapter %s. %s" % (roman, title), head + "\n".join(blocks) + "\n</section>"), missing, marks
 
 def titlepage_doc():
     b = ('<section epub:type="titlepage" class="tp">\n'
@@ -195,26 +236,42 @@ def copyright_doc():
     return doc("Copyright", b)
 
 def preface_doc():
-    blocks, missing = stitch_pages(PREFACE_PAGES)
+    blocks, missing, marks = stitch_pages(PREFACE_PAGES)
     if missing: print("  Preface missing pages:", missing)
-    if not blocks: return None
+    if not blocks: return None, []
     b = ('<section epub:type="preface">\n<h1 class="fm" id="preface">Preface</h1>\n'
          '<hr class="rule"/>\n' + "\n".join(blocks) + "\n</section>")
-    return doc("Preface", b)
+    return doc("Preface", b), marks
 
-def index_doc():
-    blocks, missing = stitch_pages(INDEX_PAGES)
+def linkify_index_pages(inner, page_href):
+    """Turn standalone page numbers in an index entry into links to their pagebreak anchors.
+    Only text nodes are touched — digits inside tags (attributes) are left alone."""
+    def repl(m):
+        n = int(m.group(0))
+        href = page_href.get(n)
+        return '<a href="%s">%d</a>' % (href, n) if href else m.group(0)
+    parts = re.split(r"(<[^>]*>)", inner)          # even = text, odd = tags
+    for i in range(0, len(parts), 2):
+        parts[i] = re.sub(r"\b\d{1,3}\b", repl, parts[i])
+    return "".join(parts)
+
+def index_doc(page_href=None):
+    blocks, missing, marks = stitch_pages(INDEX_PAGES)
     if missing: print("  Index missing pages:", missing)
-    if not blocks: return None
+    if not blocks: return None, []
     # keep only entries; synthesize clean letter dividers, robust to single garbled
     # first-letters: a real section is a RUN of >=2 consecutive entries sharing a first letter.
     entries = [b for b in blocks if b.startswith('<p class="ie"')]
     def first_letter(e):
-        m = re.search(r'<p class="ie">\s*([A-Za-z])', e)
+        m = re.search(r'<p class="ie">\s*(?:<span[^>]*>)?\s*([A-Za-z])', e)
         return m.group(1).upper() if m else None
     fl = [first_letter(e) for e in entries]
     emitted, out = set(), []
     for i, e in enumerate(entries):
+        if page_href:   # link the page numbers inside this entry
+            m = re.match(r'(<p class="ie">)(.*)(</p>)\s*$', e, re.S)
+            if m:
+                e = m.group(1) + linkify_index_pages(m.group(2), page_href) + m.group(3)
         L = fl[i]
         nxt = fl[i + 1] if i + 1 < len(entries) else None
         if L and L not in emitted and L == nxt:   # first entry of a run of the same letter
@@ -223,7 +280,7 @@ def index_doc():
         out.append(e)
     b = ('<section epub:type="index" class="indexbody">\n<h1 class="fm" id="index">Index</h1>\n'
          '<hr class="rule"/>\n' + "\n".join(out) + "\n</section>")
-    return doc("Index", b)
+    return doc("Index", b), marks
 
 def about_doc():
     b = ['<section epub:type="preamble" class="about">',
@@ -263,10 +320,11 @@ def about_doc():
       '<p class="first">The body text is OCR-derived and AI-proofread: accuracy is high but not perfect, and '
       'occasional OCR errors may remain. Formatting is preserved on a best-effort basis — chapter titles, '
       'small-capital section headings, and italics are reproduced, while some block quotations appear as '
-      'ordinary paragraphs. Original page numbers have been removed (they are meaningless in reflowable text), '
-      'except within the Index, where the numbers are the entries’ data and refer to the original 1877 '
-      'pagination. The cover is newly designed for this edition; the original scanned title page is preserved '
-      'as a facsimile at the front of the book.</p>',
+      'ordinary paragraphs. Original print page numbers are not shown in the running text (they are meaningless '
+      'in reflowable type), but each original page boundary is preserved as an invisible page marker, so a '
+      'reading system that supports it can show “print page N,” jump to a given print page, and keep citations '
+      'stable; the Index’s page numbers are live links to those markers. The cover is newly designed for this '
+      'edition; the original scanned title page is preserved as a facsimile at the front of the book.</p>',
       '<p class="colophon">Prepared July 2026 with Claude Code (orchestration by Claude Opus 4.8; per-page '
       'proofreading by Claude Sonnet at medium effort) and Tesseract OCR.</p>',
       '</section>']
@@ -285,7 +343,7 @@ def origcover_doc(imgfile):
          'Title page of the original 1877 edition.</figcaption></figure></section>')
     return doc("Original Title Page", b % imgfile)
 
-def nav_doc(docs, present, first_content):
+def nav_doc(docs, present, first_content, page_list=None):
     li = ['<li><a href="titlepage.xhtml">Title Page</a></li>']
     if "origcover.xhtml" in docs: li.append('<li><a href="origcover.xhtml">Original Title Page (facsimile)</a></li>')
     if "about.xhtml" in docs: li.append('<li><a href="about.xhtml">About This Edition</a></li>')
@@ -299,18 +357,32 @@ def nav_doc(docs, present, first_content):
            '<nav epub:type="landmarks" id="landmarks" hidden="hidden">\n<ol>\n'
            '<li><a epub:type="toc" href="nav.xhtml">Table of Contents</a></li>\n'
            '<li><a epub:type="bodymatter" href="%s">Start of Content</a></li>\n</ol>\n</nav>\n' % first_content)
+    if page_list:
+        pl = "\n".join('<li><a href="%s">%d</a></li>' % (href, n) for n, href in page_list)
+        nav += ('<nav epub:type="page-list" id="page-list" role="doc-pagelist" hidden="hidden">\n'
+                '<h1>List of Pages</h1>\n<ol>\n' + pl + "\n</ol>\n</nav>\n")
     return doc("Contents", nav)
 
-def ncx_doc(order, uid):
+def ncx_doc(order, uid, page_list=None):
     pts = []
     for i, (label, src) in enumerate(order, 1):
         pts.append('<navPoint id="np%d" playOrder="%d"><navLabel><text>%s</text></navLabel>'
                    '<content src="%s"/></navPoint>' % (i, i, html.escape(label), src))
+    pagelist = ""
+    if page_list:
+        po = len(order)
+        tgts = []
+        for n, href in page_list:
+            po += 1
+            tgts.append('<pageTarget id="pt%d" type="normal" value="%d" playOrder="%d">'
+                        '<navLabel><text>%d</text></navLabel><content src="%s"/></pageTarget>'
+                        % (n, n, po, n, href))
+        pagelist = "<pageList>\n" + "\n".join(tgts) + "\n</pageList>\n"
     return ('<?xml version="1.0" encoding="utf-8"?>\n'
             '<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">\n'
             '<head><meta name="dtb:uid" content="%s"/></head>\n'
-            '<docTitle><text>Pastoral Theology</text></docTitle>\n<navMap>\n%s\n</navMap>\n</ncx>\n'
-            ) % (uid, "\n".join(pts))
+            '<docTitle><text>Pastoral Theology</text></docTitle>\n<navMap>\n%s\n</navMap>\n%s</ncx>\n'
+            ) % (uid, "\n".join(pts), pagelist)
 
 def opf_doc(manifest, spine_ids, uid, mod):
     return ('<?xml version="1.0" encoding="utf-8"?>\n'
@@ -320,7 +392,10 @@ def opf_doc(manifest, spine_ids, uid, mod):
         '<dc:title>Pastoral Theology: The Pastor in the Various Duties of His Office</dc:title>\n'
         '<dc:creator>Thomas Murphy</dc:creator>\n<dc:language>en</dc:language>\n'
         '<dc:date>1877</dc:date>\n<dc:publisher>Presbyterian Board of Publication</dc:publisher>\n'
-        '<dc:source>Internet Archive: pastoraltheology00murp</dc:source>\n'
+        '<dc:source id="src">Internet Archive: pastoraltheology00murp (1877 print edition)</dc:source>\n'
+        '<meta refines="#src" property="source-of">pagination</meta>\n'
+        '<meta property="schema:accessibilityFeature">printPageNumbers</meta>\n'
+        '<meta property="schema:accessibilityFeature">tableOfContents</meta>\n'
         '<meta property="dcterms:modified">%s</meta>\n<meta name="cover" content="cover-image"/>\n'
         '</metadata>\n<manifest>\n%s\n</manifest>\n<spine toc="ncx">\n%s\n</spine>\n</package>\n'
         ) % (uid, mod, "\n".join(manifest), "\n".join('<itemref idref="%s"/>' % s for s in spine_ids))
@@ -357,18 +432,32 @@ def cmd_build():
     docs["titlepage.xhtml"] = titlepage_doc()
     docs["copyright.xhtml"] = copyright_doc()
     docs["about.xhtml"] = about_doc()
-    pf = preface_doc()
-    if pf: docs["preface.xhtml"] = pf
+
+    page_list = []          # (printed_number, "file#anchor") in reading order — the print page list
+    page_href = {}          # printed_number -> "file#anchor" — used to link the index's page numbers
+    def add_marks(fn, marks):
+        for n in marks:
+            href = "%s#pg%d" % (fn, n)
+            page_list.append((n, href)); page_href[n] = href
+
+    pf_doc, pf_marks = preface_doc()
+    if pf_doc:
+        docs["preface.xhtml"] = pf_doc; add_marks("preface.xhtml", pf_marks)
 
     present = []
     for roman, title, a, b in CHAPTERS:
-        d, _ = chapter_doc(roman, title, a, b)
-        if d: docs["ch%s.xhtml" % roman] = d; present.append(roman)
-    ix = index_doc()
-    if ix: docs["index.xhtml"] = ix
+        d, _, marks = chapter_doc(roman, title, a, b)
+        if d:
+            docs["ch%s.xhtml" % roman] = d; present.append(roman)
+            add_marks("ch%s.xhtml" % roman, marks)
+
+    # build the index last, so its page numbers can be linked to the body's pagebreak anchors
+    ix_doc, ix_marks = index_doc(page_href)
+    if ix_doc:
+        docs["index.xhtml"] = ix_doc; add_marks("index.xhtml", ix_marks)
 
     first_content = "ch%s.xhtml" % (present[0] if present else "I")
-    docs["nav.xhtml"] = nav_doc(docs, present, first_content)
+    docs["nav.xhtml"] = nav_doc(docs, present, first_content, page_list)
 
     for fn, s in list(docs.items()):
         validate(s, fn)
@@ -394,7 +483,7 @@ def cmd_build():
         if "ch%s.xhtml" % roman in docs:
             ncx_order.append(("Chapter %s. %s" % (roman, title), "ch%s.xhtml" % roman))
     if "index.xhtml" in docs: ncx_order.append(("Index", "index.xhtml"))
-    open(os.path.join(oebps, "toc.ncx"), "w", encoding="utf-8").write(ncx_doc(ncx_order, uid))
+    open(os.path.join(oebps, "toc.ncx"), "w", encoding="utf-8").write(ncx_doc(ncx_order, uid, page_list))
 
     def mid(fn): return re.sub(r"[^A-Za-z0-9]", "_", fn)
     manifest = []
@@ -428,7 +517,7 @@ def cmd_build():
 def cmd_preview(roman):
     m = {r: (t, a, b) for r, t, a, b in CHAPTERS}
     t, a, b = m[roman]
-    blocks, missing = stitch_pages(range(a, b + 1))
+    blocks, missing, marks = stitch_pages(range(a, b + 1))
     print("Ch %s pages %d-%d: %d blocks, missing=%s" % (roman, a, b, len(blocks), missing))
     head = ('<div class="chapnum">CHAPTER %s.</div>\n<h1 class="chaptitle">%s</h1>\n<hr class="rule"/>\n' % (roman, html.escape(t)))
     out = ('<!DOCTYPE html><html><head><meta charset="utf-8"><style>%s</style></head><body>%s\n%s</body></html>'
