@@ -140,6 +140,27 @@ finds and fixes these in three steps:
 3. `tools/merge_confirmed_fixes.py` — merges confirmed fixes into the per-page deltas with
    word-boundary-safe replacement strings, then affected pages are re-reconstructed.
 
+### Line-wrap hyphen policy
+
+Print-era line-wrap hyphens have no place in reflowable text, so they are dissolved at
+every layer (readers may still soft-hyphenate at render time via CSS `hyphens: auto`,
+which is display-only):
+
+- `dehyphen_join` (reconstruction) joins hyphen-split words within a paragraph; a small
+  compound-repair list restores words whose real hyphen coincided with the line break
+  (`Sabbath-school`, `prayer-meeting`).
+- Delta fixes written against the raw OCR line layout (`"Serip-\ntures"`) are normalized
+  at load time so they match the joined text (`apply_fixes` tries the de-hyphenated /
+  newline-collapsed form as a fallback).
+- The assembler treats a `<p>` ending in a letter-hyphen as near-certain evidence of a
+  false split and joins it to the following `<p>` — within and across pages, flags or
+  no flags — with a guard for suspended compounds ("well- or ill-…") and the same
+  compound repair after the join.
+- A word-count audit (OCR words vs. reconstructed words per page) guards against text
+  loss; it caught a heading-matching bug where a paragraph containing a swallowed
+  centered heading was replaced by the heading alone (`split_heading` now splits such
+  blocks instead, and only when the swallowed occurrence is set in capitals).
+
 ### Option C — full pipeline from scratch, including the AI proofreading
 
 Steps 1, 3, 4 are as above. Step 2 (`tools/wf_delta.js`) is a **Claude Code Workflow** — it

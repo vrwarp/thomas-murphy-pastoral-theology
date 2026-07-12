@@ -60,7 +60,9 @@ def read_page(page):
     raw = re.sub(r"\s*```$", "", raw)
     starts = bool(re.search(r"<!--\s*startsMidParagraph:\s*true\s*-->", raw, re.I))
     ends = bool(re.search(r"<!--\s*endsMidParagraph:\s*true\s*-->", raw, re.I))
-    body = re.sub(r"<!--\s*(?:starts|ends)MidParagraph:.*?-->", "", raw, flags=re.I)
+    # strip ALL comments (flag lines, override annotations, ...) so none becomes a
+    # phantom block that leaks into the EPUB or blocks a paragraph join
+    body = re.sub(r"<!--.*?-->", "", raw, flags=re.S)
     return starts, ends, blocks_from_fragment(body)
 
 def blocks_from_fragment(fragment_html):
@@ -111,34 +113,91 @@ def _insert_anchor(block, anchor):
     m = re.match(r"(<[a-zA-Z][^>]*>)(.*)", block, re.S)
     return (m.group(1) + anchor + m.group(2)) if m else (anchor + block)
 
+# Compound words whose internal hyphen coincides with a line-wrap hyphen would be
+# wrongly fused by de-hyphenating joins — repair them. (Kept in sync with the word
+# pairs in ocr_reconstruct.py COMMON_FIXES.)
+COMPOUND_REPAIRS = [
+    (re.compile(r"\bSabbathschools\b"), "Sabbath-schools"),
+    (re.compile(r"\bSabbathschool\b"), "Sabbath-school"),
+    (re.compile(r"\bPrayermeetings\b"), "Prayer-meetings"),
+    (re.compile(r"\bprayermeetings\b"), "prayer-meetings"),
+    (re.compile(r"\bPrayermeeting\b"), "Prayer-meeting"),
+    (re.compile(r"\bprayermeeting\b"), "prayer-meeting"),
+]
+
+def repair_compounds(s):
+    for pat, rep in COMPOUND_REPAIRS:
+        s = pat.sub(rep, s)
+    return s
+
+P_OPEN = re.compile(r"(<p\b[^>]*>)(.*)</p>\s*$", re.S)
+HYPH_END = re.compile(r"[A-Za-z]-$")
+
+def strip_tags(s):
+    return re.sub(r"<[^>]+>", "", s)
+
+def join_p_blocks(left_block, right_block, anchor=""):
+    """Merge two <p> blocks into one, dissolving a line-wrap hyphen at the join and
+    placing the optional pagebreak anchor at the exact join point. Preserves the left
+    block's opening tag (e.g. <p class="ie"> for index entries). Join decisions are
+    made on tag-stripped text so trailing/leading inline markup (</em>) can't mask
+    the hyphen or the continuation."""
+    m = P_OPEN.match(left_block)
+    open_tag, L = m.group(1), m.group(2).rstrip()
+    R = p_inner(right_block).lstrip()
+    Lt, Rt = strip_tags(L).rstrip(), strip_tags(R).lstrip()
+    if HYPH_END.search(Lt):
+        if re.match(r"(?:or|and|nor)\b", Rt):      # suspended compound: "well- or ill-..."
+            inner = L + " " + anchor + R
+        else:
+            # dissolve the line-wrap hyphen: remove the last hyphen even when closing
+            # tags follow it (e.g. "...suc-</em>")
+            L2 = re.sub(r"-(?=(?:\s*</[a-zA-Z]+>)*\s*$)", "", L, count=1)
+            inner = L2.rstrip() + anchor + R
+    elif Lt.endswith("—") or Rt.startswith("—"):
+        inner = L + anchor + R
+    else:
+        inner = L + " " + anchor + R
+    return open_tag + repair_compounds(inner) + "</p>"
+
 def stitch_pages(pages, anchors=True):
-    """Stitch consecutive page indices, merging paragraphs across seams. When `anchors`,
-    insert an invisible pagebreak marker at the start of each numbered page's content and
-    return the list of printed page numbers marked (in order)."""
+    """Stitch consecutive page indices into a block sequence. Paragraphs are merged
+    (a) across page seams when the continuation flags say so, and (b) whenever the
+    previous <p> ends with a line-wrap hyphen — a trailing "word-" before a block
+    boundary is near-certain evidence of a false split, within or across pages, so
+    print-era line-wrap hyphens never survive into the reflowable text. When `anchors`,
+    an invisible pagebreak marker is placed at the start of each page's content (or at
+    the exact join point) and the marked printed numbers are returned."""
     merged, prev_end, missing, marks = [], False, [], []
     for pg in pages:
         res = read_page(pg)
         if res is None:
             missing.append(pg); prev_end = False; continue
         starts, ends, blocks = res
-        pn = printed_of(pg) if anchors else None
+        pn = printed_of(pg) if (anchors and blocks) else None
         anchor = pagebreak_span(pn) if pn is not None else ""
         if anchor:
             marks.append(pn)
-        if merged and prev_end and starts and blocks and is_p(merged[-1]) and is_p(blocks[0]):
-            # paragraph continues across the seam: put the marker at the join point
-            L, R = p_inner(merged[-1]).rstrip(), p_inner(blocks[0]).lstrip()
-            if re.search(r"[A-Za-z0-9]-$", L):
-                inner = L[:-1].rstrip() + anchor + R
-            elif L.endswith("—") or R.startswith("—"):
-                inner = L + anchor + R
-            else:
-                inner = L + (" " if anchor else "") + anchor + R if anchor else L + " " + R
-            merged[-1] = "<p>" + inner + "</p>"
-            blocks = blocks[1:]
-        elif anchor and blocks:
-            blocks = [_insert_anchor(blocks[0], anchor)] + blocks[1:]
-        merged.extend(blocks)
+        seam = True                # first block of this page joins across the page seam
+        for b in blocks:
+            if merged and is_p(merged[-1]) and is_p(b) and 'class="verse"' not in merged[-1][:24]:
+                Lt = strip_tags(p_inner(merged[-1])).rstrip()
+                Rt = strip_tags(p_inner(b)).lstrip()
+                flag_join = seam and prev_end and starts
+                hyph_join = bool(HYPH_END.search(Lt))
+                # mid-sentence continuation: a paragraph never ends on a bare lowercase
+                # word / comma / semicolon, and a real paragraph never starts lowercase —
+                # both at once means a false split (tesseract per-line "paragraphs")
+                cont_join = bool(re.search(r"[a-z][,;]?$", Lt)) and \
+                            bool(re.match(r"[a-z]", Rt))
+                if flag_join or hyph_join or cont_join:
+                    merged[-1] = join_p_blocks(merged[-1], b, anchor if seam else "")
+                    seam = False
+                    continue
+            if seam and anchor:
+                b = _insert_anchor(b, anchor)
+            merged.append(b)
+            seam = False
         prev_end = ends
     return merged, missing, marks
 
