@@ -1,13 +1,37 @@
 {
-  "drop": ["4 PREFACE.”"],
-  "fixes": [
-    {"wrong": "T have been", "right": "I have been"},
-    {"wrong": "Hstening", "right": "listening"},
-    {"wrong": "conyersations", "right": "conversations"},
-    {"wrong": "Rey. Dr. Archibald", "right": "Rev. Dr. Archibald"},
-    {"wrong": "were hot written", "right": "were not written"},
-    {"wrong": "these leetures", "right": "these lectures"}
-  ],
-  "headings": [],
-  "italics": []
+ "drop": [
+  "4 PREFACE.\u201d"
+ ],
+ "fixes": [
+  {
+   "wrong": "T have been",
+   "right": "I have been"
+  },
+  {
+   "wrong": "Hstening",
+   "right": "listening"
+  },
+  {
+   "wrong": "conyersations",
+   "right": "conversations"
+  },
+  {
+   "wrong": "Rey. Dr. Archibald",
+   "right": "Rev. Dr. Archibald"
+  },
+  {
+   "wrong": "were hot written",
+   "right": "were not written"
+  },
+  {
+   "wrong": "these leetures",
+   "right": "these lectures"
+  },
+  {
+   "wrong": "oflice",
+   "right": "office"
+  }
+ ],
+ "headings": [],
+ "italics": []
 }

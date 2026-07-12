@@ -1,10 +1,21 @@
 {
-  "drop": [
-    "ACTIVITIES OF THE CHURCH. 315"
-  ],
-  "fixes": [
-    {"wrong": "intcrest-", "right": "interest-"}
-  ],
-  "headings": [],
-  "italics": []
+ "drop": [
+  "ACTIVITIES OF THE CHURCH. 315"
+ ],
+ "fixes": [
+  {
+   "wrong": "intcrest-",
+   "right": "interest-"
+  },
+  {
+   "wrong": "mecting",
+   "right": "meeting"
+  },
+  {
+   "wrong": "intcresting",
+   "right": "interesting"
+  }
+ ],
+ "headings": [],
+ "italics": []
 }

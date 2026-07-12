@@ -1,9 +1,22 @@
 {
-  "drop": ["IN THE CLOSET. ae", "77"],
-  "fixes": [
-    {"wrong": "mect these requirements", "right": "meet these requirements"},
-    {"wrong": "whose ex-\nainple", "right": "whose ex-\nample"}
-  ],
-  "headings": [],
-  "italics": []
+ "drop": [
+  "IN THE CLOSET. ae",
+  "77"
+ ],
+ "fixes": [
+  {
+   "wrong": "mect these requirements",
+   "right": "meet these requirements"
+  },
+  {
+   "wrong": "whose ex-\nainple",
+   "right": "whose ex-\nample"
+  },
+  {
+   "wrong": "exainple",
+   "right": "example"
+  }
+ ],
+ "headings": [],
+ "italics": []
 }

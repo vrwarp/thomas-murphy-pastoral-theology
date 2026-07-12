@@ -1,9 +1,21 @@
 {
-  "drop": ["190 THE PASTOR"],
-  "fixes": [
-    {"wrong": "agency? he preacher", "right": "agency? The preacher"},
-    {"wrong": "then wonld come", "right": "then would come"}
-  ],
-  "headings": [],
-  "italics": []
+ "drop": [
+  "190 THE PASTOR"
+ ],
+ "fixes": [
+  {
+   "wrong": "agency? he preacher",
+   "right": "agency? The preacher"
+  },
+  {
+   "wrong": "then wonld come",
+   "right": "then would come"
+  },
+  {
+   "wrong": "MeCheyne",
+   "right": "McCheyne"
+  }
+ ],
+ "headings": [],
+ "italics": []
 }

@@ -72,11 +72,26 @@ def load_delta(page):
     d.setdefault("headings", []); d.setdefault("italics", [])
     return d
 
+def _fix_variants(w, r):
+    """Yield matchable forms of a delta fix. The proofreading agents wrote some fixes
+    against the raw OCR line layout ("Serip-\\ntures"), but fixes are applied AFTER the
+    lines are joined and de-hyphenated — so also try the fix with line-wrap hyphens
+    dissolved and newlines collapsed to spaces."""
+    yield w, r
+    if "\n" in w or "\n" in r:
+        dw = re.sub(r"\s*\n\s*", " ", re.sub(r"-\s*\n\s*", "", w))
+        dr = re.sub(r"\s*\n\s*", " ", re.sub(r"-\s*\n\s*", "", r))
+        yield dw, dr
+
 def apply_fixes(text, fixes):
     for f in fixes:
-        w, r = f.get("wrong"), f.get("right")
-        if w and r is not None and w in text:
-            text = text.replace(w, r)
+        w0, r0 = f.get("wrong"), f.get("right")
+        if not w0 or r0 is None:
+            continue
+        for w, r in _fix_variants(w0, r0):
+            if w and w != r and w in text:
+                text = text.replace(w, r)
+                break
     return text
 
 # Book-wide OCR fixes not always caught by the per-page delta: rejoin compound words that
@@ -232,14 +247,57 @@ def reconstruct(page, kind="body"):
         blocks.append(cur)
 
     def match_heading(text):
+        """Match a block to a delta heading. Only a block whose text is essentially the
+        heading itself (or a fragment of it) qualifies — the length guard is critical:
+        a long paragraph that merely CONTAINS the heading (tesseract sometimes merges
+        the centered heading line into a body block) must be SPLIT, never replaced,
+        or the paragraph's body text is silently lost."""
         n = norm(text)
         if not n:
             return None
         for hn, htext, hlevel in heading_index:
-            if n == hn or (len(n) >= 6 and (n.startswith(hn[:14]) or hn.startswith(n[:14])
-                          or hn in n or n in hn)):
+            if len(n) <= len(hn) + 12 and (n == hn or (len(n) >= 6 and (
+                    n.startswith(hn[:14]) or hn.startswith(n[:14]) or hn in n or n in hn))):
                 return (htext, hlevel if hlevel in ("h2", "h3") else "h2")
         return None
+
+    def split_heading(text):
+        """If a long paragraph swallowed a heading, split it into (before, heading, after).
+        Returns None when no full heading is found — then the block stays a paragraph
+        (keeping the text inline is always better than losing it)."""
+        for hn, htext, hlevel in heading_index:
+            n = norm(text)
+            if len(n) <= len(hn) + 12 or (hn not in n):
+                continue
+            words = [re.escape(w) for w in re.findall(r"[A-Za-z0-9]+", htext)]
+            if len(words) < 2:
+                continue
+            pat = re.compile(r"\(?\s*" + r"[\s.:;,()\-]{0,4}".join(words) + r"\s*\.?\s*",
+                             re.IGNORECASE)
+            m = pat.search(text)
+            # the printed heading is set in (small) capitals, so the swallowed occurrence
+            # must be mostly caps — otherwise it is the same phrase in ordinary body prose
+            # (e.g. "...appreciate the importance of the Sabbath-school work") and must
+            # NOT be split.
+            if m and caps_ratio(m.group(0)) >= 0.5:
+                lvl = hlevel if hlevel in ("h2", "h3") else "h2"
+                return text[:m.start()].strip(), (htext, lvl), text[m.end():].strip()
+        return None
+
+    def emit_heading(htext, level):
+        tc = title_case(htext)
+        if re.match(r"^\(\s*[a-zA-Z]\s*\)", htext):
+            level = "h3"
+        hblock = (level, "<%s>%s</%s>" % (level, esc(tc), level))
+        # a multi-line heading can split into consecutive blocks that both match the
+        # same delta heading -> collapse consecutive identical headings
+        if html_blocks and html_blocks[-1][0] in ("h2", "h3") and html_blocks[-1][1] == hblock[1]:
+            return
+        html_blocks.append(hblock)
+
+    def emit_paragraph(text, para):
+        inner = apply_italics(esc(text), delta["italics"])
+        html_blocks.append(("p", "<p>" + inner + "</p>", para))
 
     html_blocks = []
     for para in blocks:
@@ -259,15 +317,16 @@ def reconstruct(page, kind="body"):
         lettered = re.match(r"^\(\s*[a-zA-Z]\s*\)", text)
         dh = match_heading(text)
         if dh:
-            tc = title_case(dh[0]); level = dh[1]
-            if re.match(r"^\(\s*[a-zA-Z]\s*\)", dh[0]):
-                level = "h3"
-            hblock = (level, "<%s>%s</%s>" % (level, esc(tc), level))
-            # a multi-line heading can split into consecutive blocks that both match the
-            # same delta heading -> collapse consecutive identical headings
-            if html_blocks and html_blocks[-1][0] in ("h2", "h3") and html_blocks[-1][1] == hblock[1]:
-                continue
-            html_blocks.append(hblock)
+            emit_heading(dh[0], dh[1])
+            continue
+        sp = split_heading(text)
+        if sp:
+            before, (htext, lvl), after = sp
+            if before:
+                emit_paragraph(before, para)
+            emit_heading(htext, lvl)
+            if after:
+                emit_paragraph(after, para)
             continue
         looks_heading = (short and centered_any and (caps_ratio(text) > 0.55 or lettered)) or \
                         (lettered and caps_ratio(text) > 0.5)
@@ -276,8 +335,7 @@ def reconstruct(page, kind="body"):
             lvl = "h3" if lettered else "h2"
             html_blocks.append((lvl, "<%s>%s</%s>" % (lvl, esc(tc), lvl)))
         else:
-            inner = apply_italics(esc(text), delta["italics"])
-            html_blocks.append(("p", "<p>" + inner + "</p>", para))
+            emit_paragraph(text, para)
 
     # continuation flags
     starts_mid = False

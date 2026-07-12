@@ -1,6 +1,13 @@
 {
-  "drop": ["IN HIS PERSONAL PAROCHIAL WORK. 271"],
-  "fixes": [],
-  "headings": [],
-  "italics": []
+ "drop": [
+  "IN HIS PERSONAL PAROCHIAL WORK. 271"
+ ],
+ "fixes": [
+  {
+   "wrong": "attamment",
+   "right": "attainment"
+  }
+ ],
+ "headings": [],
+ "italics": []
 }

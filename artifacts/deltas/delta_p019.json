@@ -1,9 +1,23 @@
 {
-  "drop": ["18 PASTORAL THEOLOGY."],
-  "fixes": [
-    {"wrong": "devolye", "right": "devolve"},
-    {"wrong": "unto the doe-\ntrine", "right": "unto the doc-\ntrine"}
-  ],
-  "headings": [],
-  "italics": ["The general nature of the Scriptures and their great doctrines"]
+ "drop": [
+  "18 PASTORAL THEOLOGY."
+ ],
+ "fixes": [
+  {
+   "wrong": "devolye",
+   "right": "devolve"
+  },
+  {
+   "wrong": "unto the doe-\ntrine",
+   "right": "unto the doc-\ntrine"
+  },
+  {
+   "wrong": "doetrine",
+   "right": "doctrine"
+  }
+ ],
+ "headings": [],
+ "italics": [
+  "The general nature of the Scriptures and their great doctrines"
+ ]
 }

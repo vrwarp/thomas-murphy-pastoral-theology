@@ -1,9 +1,21 @@
 {
-  "drop": ["226 THE PASTOR"],
-  "fixes": [
-    {"wrong": "instrue-\ntion", "right": "instruc-\ntion"},
-    {"wrong": "assist.", "right": "assist"}
-  ],
-  "headings": [],
-  "italics": []
+ "drop": [
+  "226 THE PASTOR"
+ ],
+ "fixes": [
+  {
+   "wrong": "instrue-\ntion",
+   "right": "instruc-\ntion"
+  },
+  {
+   "wrong": "assist.",
+   "right": "assist"
+  },
+  {
+   "wrong": "instruetion",
+   "right": "instruction"
+  }
+ ],
+ "headings": [],
+ "italics": []
 }
