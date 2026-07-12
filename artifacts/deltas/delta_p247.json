@@ -1,23 +1,68 @@
 {
-  "drop": ["246 THE PASTOR"],
-  "fixes": [
-    {"wrong":"sinee", "right":"since"},
-    {"wrong":"snateh", "right":"snatch"},
-    {"wrong":"trom", "right":"from"},
-    {"wrong":"mereies", "right":"mercies"},
-    {"wrong":"ean save", "right":"can save"},
-    {"wrong":"nttermost", "right":"uttermost"},
-    {"wrong":"neqnaintanees", "right":"acquaintances"},
-    {"wrong":"circumstanees", "right":"circumstances"},
-    {"wrong":"thei feelings", "right":"their feelings"},
-    {"wrong":"shonld", "right":"should"},
-    {"wrong":"comtorting", "right":"comforting"},
-    {"wrong":"Zt is a good plan to leave Little books and traets", "right":"It is a good plan to leave little books and tracts"},
-    {"wrong":"ean be received", "right":"can be received"}
-  ],
-  "headings": [],
-  "italics": [
-    "In conversing and praying with the sick the pastor should aim to benefit others also who may providentially be present.",
-    "It is a good plan to leave little books and tracts with invalids when they are able to read them."
-  ]
+ "drop": [
+  "246 THE PASTOR"
+ ],
+ "fixes": [
+  {
+   "wrong": "sinee",
+   "right": "since"
+  },
+  {
+   "wrong": "snateh",
+   "right": "snatch"
+  },
+  {
+   "wrong": "trom",
+   "right": "from"
+  },
+  {
+   "wrong": "mereies",
+   "right": "mercies"
+  },
+  {
+   "wrong": "ean save",
+   "right": "can save"
+  },
+  {
+   "wrong": "nttermost",
+   "right": "uttermost"
+  },
+  {
+   "wrong": "neqnaintanees",
+   "right": "acquaintances"
+  },
+  {
+   "wrong": "circumstanees",
+   "right": "circumstances"
+  },
+  {
+   "wrong": "thei feelings",
+   "right": "their feelings"
+  },
+  {
+   "wrong": "shonld",
+   "right": "should"
+  },
+  {
+   "wrong": "comtorting",
+   "right": "comforting"
+  },
+  {
+   "wrong": "Zt is a good plan to leave Little books and traets",
+   "right": "It is a good plan to leave little books and tracts"
+  },
+  {
+   "wrong": "ean be received",
+   "right": "can be received"
+  },
+  {
+   "wrong": "sonl",
+   "right": "soul"
+  }
+ ],
+ "headings": [],
+ "italics": [
+  "In conversing and praying with the sick the pastor should aim to benefit others also who may providentially be present.",
+  "It is a good plan to leave little books and tracts with invalids when they are able to read them."
+ ]
 }

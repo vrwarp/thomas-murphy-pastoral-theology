@@ -1,8 +1,18 @@
 {
-  "drop": ["IN THE PULPIT. 215"],
-  "fixes": [],
-  "headings": [
-    {"text": "PREPARATION OF THE MIND FOR ENTERING THE PULPIT.", "level": "h2"}
-  ],
-  "italics": []
+ "drop": [
+  "IN THE PULPIT. 215"
+ ],
+ "fixes": [
+  {
+   "wrong": "inay",
+   "right": "may"
+  }
+ ],
+ "headings": [
+  {
+   "text": "PREPARATION OF THE MIND FOR ENTERING THE PULPIT.",
+   "level": "h2"
+  }
+ ],
+ "italics": []
 }

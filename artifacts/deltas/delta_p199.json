@@ -1,12 +1,30 @@
 {
-  "drop": ["198 THE PASTOR"],
-  "fixes": [
-    {"wrong": "“Twas never fit,”", "right": "“I was never fit,”"},
-    {"wrong": "Tn such circumstances", "right": "In such circumstances"},
-    {"wrong": "element of sue-", "right": "element of suc-"}
-  ],
-  "headings": [
-    {"text": "(c) PREACHING SHOULD BE IN SYMPATHY WITH THE WANTS OF THE PEOPLE.", "level": "h3"}
-  ],
-  "italics": []
+ "drop": [
+  "198 THE PASTOR"
+ ],
+ "fixes": [
+  {
+   "wrong": "\u201cTwas never fit,\u201d",
+   "right": "\u201cI was never fit,\u201d"
+  },
+  {
+   "wrong": "Tn such circumstances",
+   "right": "In such circumstances"
+  },
+  {
+   "wrong": "element of sue-",
+   "right": "element of suc-"
+  },
+  {
+   "wrong": "suecess",
+   "right": "success"
+  }
+ ],
+ "headings": [
+  {
+   "text": "(c) PREACHING SHOULD BE IN SYMPATHY WITH THE WANTS OF THE PEOPLE.",
+   "level": "h3"
+  }
+ ],
+ "italics": []
 }

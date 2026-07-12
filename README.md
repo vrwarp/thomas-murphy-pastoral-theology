@@ -121,6 +121,25 @@ python3 tools/ocr_reconstruct.py index 502 510
 python3 tools/assemble.py build
 ```
 
+### Typo sweep (post-pass)
+
+OCR of worn 19th-century type fails along known letter-confusion patterns (e↔c, rn↔m,
+li↔h, u↔n, in↔m, …), producing plausible-looking typos such as `prayer-mect`. The sweep
+finds and fixes these in three steps:
+
+1. `tools/find_typo_suspects.py` — **intra-corpus confusion-pair frequency analysis**: a
+   token that is *rare* in this book, while a confusion-variant of it is *common* in the
+   same book, is a likely misread (`mect`×1 vs `meet`×27). Corpus frequency adapts to the
+   book's own vocabulary; a dictionary (with inflection handling) is only a secondary
+   signal, and dictionary words like `arc`/`clay` require far stronger evidence. Emits
+   per-page hint files — candidates are **never auto-applied**.
+2. `tools/wf_validate_typos.js` — one Sonnet/medium agent per suspect page validates each
+   candidate against the page image (the authority) and writes confirmed/rejected verdicts.
+   This is what catches the traps: `Horne` (Bishop Horne, a name), `clay` ("miry clay"),
+   and page-boundary hyphen fragments (`fect`, `tive`) were all correctly rejected.
+3. `tools/merge_confirmed_fixes.py` — merges confirmed fixes into the per-page deltas with
+   word-boundary-safe replacement strings, then affected pages are re-reconstructed.
+
 ### Option C — full pipeline from scratch, including the AI proofreading
 
 Steps 1, 3, 4 are as above. Step 2 (`tools/wf_delta.js`) is a **Claude Code Workflow** — it

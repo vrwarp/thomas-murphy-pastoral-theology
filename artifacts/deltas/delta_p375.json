@@ -1,6 +1,17 @@
 {
-  "drop": ["374 THE PASTOR IN THE"],
-  "fixes": [],
-  "headings": [],
-  "italics": []
+ "drop": [
+  "374 THE PASTOR IN THE"
+ ],
+ "fixes": [
+  {
+   "wrong": "sehool",
+   "right": "school"
+  },
+  {
+   "wrong": "Chureh",
+   "right": "Church"
+  }
+ ],
+ "headings": [],
+ "italics": []
 }

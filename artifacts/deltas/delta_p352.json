@@ -1,10 +1,27 @@
 {
-  "drop": ["PROGRESS OF THE CHURCH. 351"],
-  "fixes": [
-    {"wrong": "presenee", "right": "presence"},
-    {"wrong": "cireum-", "right": "circum-"},
-    {"wrong": "Rey.", "right": "Rev."}
-  ],
-  "headings": [],
-  "italics": ["There ought by all means to be meetings of the young converts by themselves, where they could engage in prayer and conference without the feeling of embarrassment which the presence of others would produce."]
+ "drop": [
+  "PROGRESS OF THE CHURCH. 351"
+ ],
+ "fixes": [
+  {
+   "wrong": "presenee",
+   "right": "presence"
+  },
+  {
+   "wrong": "cireum-",
+   "right": "circum-"
+  },
+  {
+   "wrong": "Rey.",
+   "right": "Rev."
+  },
+  {
+   "wrong": "cireumstances",
+   "right": "circumstances"
+  }
+ ],
+ "headings": [],
+ "italics": [
+  "There ought by all means to be meetings of the young converts by themselves, where they could engage in prayer and conference without the feeling of embarrassment which the presence of others would produce."
+ ]
 }

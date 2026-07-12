@@ -1,10 +1,25 @@
 {
-  "drop": ["264 THE PASTOR"],
-  "fixes": [
-    {"wrong": "sue-\ncess", "right": "suc-\ncess"},
-    {"wrong": "not sueh an affluence", "right": "not such an affluence"},
-    {"wrong": "them ean be obtained", "right": "them can be obtained"}
-  ],
-  "headings": [],
-  "italics": []
+ "drop": [
+  "264 THE PASTOR"
+ ],
+ "fixes": [
+  {
+   "wrong": "sue-\ncess",
+   "right": "suc-\ncess"
+  },
+  {
+   "wrong": "not sueh an affluence",
+   "right": "not such an affluence"
+  },
+  {
+   "wrong": "them ean be obtained",
+   "right": "them can be obtained"
+  },
+  {
+   "wrong": "suecess",
+   "right": "success"
+  }
+ ],
+ "headings": [],
+ "italics": []
 }
