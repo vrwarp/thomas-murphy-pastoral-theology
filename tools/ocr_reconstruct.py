@@ -12,7 +12,7 @@ Usage:
   python tools/ocr_reconstruct.py index 502 510         # reconstruct the two-column index
 Requires: tesseract on PATH, and 300 dpi page images in work/ocr-images/ (run_ocr.sh).
 """
-import os, re, subprocess, statistics, html, glob, sys, json
+import os, re, subprocess, statistics, html, glob, sys, json, difflib
 
 # Repo-relative paths (override the repo root with the PT_ROOT env var).
 ROOT = os.environ.get("PT_ROOT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -256,9 +256,18 @@ def reconstruct(page, kind="body"):
         if not n:
             return None
         for hn, htext, hlevel in heading_index:
-            if len(n) <= len(hn) + 12 and (n == hn or (len(n) >= 6 and (
-                    n.startswith(hn[:14]) or hn.startswith(n[:14]) or hn in n or n in hn))):
-                return (htext, hlevel if hlevel in ("h2", "h3") else "h2")
+            if len(n) > len(hn) + 12:
+                continue
+            lvl = hlevel if hlevel in ("h2", "h3") else "h2"
+            if n == hn or (len(n) >= 6 and (
+                    n.startswith(hn[:14]) or hn.startswith(n[:14]) or hn in n or n in hn)):
+                return (htext, lvl)
+            # fuzzy fallback: an OCR error inside the heading (e.g. marker "(dq)" for "(d)",
+            # or "THe" for "The") breaks the strict prefix/substring checks even though the
+            # block clearly IS this heading. The length guard keeps this from matching body
+            # paragraphs; a high similarity ratio keeps it from matching a different heading.
+            if len(n) >= 12 and difflib.SequenceMatcher(None, n, hn).ratio() >= 0.85:
+                return (htext, lvl)
         return None
 
     def split_heading(text):

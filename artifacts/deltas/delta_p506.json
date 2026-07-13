@@ -1,9 +1,22 @@
 {
-  "drop": ["INDEX. 505"],
-  "fixes": [],
-  "headings": [
-    {"text": "O.", "level": "h2"},
-    {"text": "P.", "level": "h2"}
-  ],
-  "italics": []
+ "drop": [
+  "INDEX. 505"
+ ],
+ "fixes": [
+  {
+   "wrong": "OPpPorRTUNITIES",
+   "right": "Opportunities"
+  }
+ ],
+ "headings": [
+  {
+   "text": "O.",
+   "level": "h2"
+  },
+  {
+   "text": "P.",
+   "level": "h2"
+  }
+ ],
+ "italics": []
 }
