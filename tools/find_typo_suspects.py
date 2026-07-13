@@ -33,6 +33,7 @@ CONFUSIONS = [
     ("li", "h"), ("h", "li"),        # wliich->which
     ("rn", "m"), ("m", "rn"),        # modem->modern
     ("in", "m"), ("m", "in"),
+    ("m", "n"), ("n", "m"),          # thimgs->things, nothimg->nothing, watchimg->watching
     ("vv", "w"),
     ("f", "t"), ("t", "f"),          # of->ot
     ("l", "i"), ("i", "l"),

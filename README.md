@@ -140,6 +140,15 @@ finds and fixes these in three steps:
 3. `tools/merge_confirmed_fixes.py` — merges confirmed fixes into the per-page deltas with
    word-boundary-safe replacement strings, then affected pages are re-reconstructed.
 
+`tools/find_recon_drift.py` is a second, more principled detector for the same validation
+step. The reconstruction re-OCRs each page (via `run_tsv`, for word geometry) and uses that
+pass's text, which can differ from the plain-text OCR in `artifacts/ocr/` — the pass the
+agents validated. This detector flags words the reconstructed section introduced that the
+validated plain OCR reads as a common word (e.g. `thimgs`→`things`), and feeds them through
+the same image validation. Heading detection is also fuzzy-matched (SequenceMatcher ≥ 0.85,
+length-guarded) so an OCR error in a heading's lettered marker — `(dq)` for `(d)`, `(6)` for
+`(b)` — can't discard an otherwise-correct delta heading and leave raw OCR in a `<p>`.
+
 ### Line-wrap hyphen policy
 
 Print-era line-wrap hyphens have no place in reflowable text, so they are dissolved at
