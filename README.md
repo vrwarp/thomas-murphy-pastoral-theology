@@ -158,9 +158,14 @@ which is display-only):
 - `dehyphen_join` (reconstruction) joins hyphen-split words within a paragraph; a small
   compound-repair list restores words whose real hyphen coincided with the line break
   (`Sabbath-school`, `prayer-meeting`).
-- Delta fixes written against the raw OCR line layout (`"Serip-\ntures"`) are normalized
-  at load time so they match the joined text (`apply_fixes` tries the de-hyphenated /
-  newline-collapsed form as a fallback).
+- Delta fixes written against the raw OCR line layout are normalized at load time so they
+  match the joined text (`apply_fixes` → `_fix_variants`): a fix that copied a two-line
+  wrap (`"Serip-\ntures"`) is tried with the newline collapsed, and a fix that copied a
+  single trailing line-wrap hyphen (`"...most im-"`, `"sue-"`) is tried with that hyphen
+  dropped so the stem matches as a prefix of the whole word (`important`, `success`).
+  Length-guarded so a short stem can't over-match. (This class of dead fix hid ~17 valid
+  corrections the agents had already made — stray quotes like `‘This`, `reeommending`,
+  `adyantageous`, `38.`→`3.`.)
 - The assembler treats a `<p>` ending in a letter-hyphen as near-certain evidence of a
   false split and joins it to the following `<p>` — within and across pages, flags or
   no flags — with a guard for suspended compounds ("well- or ill-…") and the same

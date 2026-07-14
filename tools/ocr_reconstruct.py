@@ -74,14 +74,21 @@ def load_delta(page):
 
 def _fix_variants(w, r):
     """Yield matchable forms of a delta fix. The proofreading agents wrote some fixes
-    against the raw OCR line layout ("Serip-\\ntures"), but fixes are applied AFTER the
-    lines are joined and de-hyphenated — so also try the fix with line-wrap hyphens
-    dissolved and newlines collapsed to spaces."""
+    against the raw OCR line layout ("Serip-\\ntures", "...most im-"), but fixes are
+    applied AFTER the lines are joined and de-hyphenated — so also try the fix with
+    line-wrap hyphens dissolved and newlines collapsed to spaces."""
     yield w, r
     if "\n" in w or "\n" in r:
         dw = re.sub(r"\s*\n\s*", " ", re.sub(r"-\s*\n\s*", "", w))
         dr = re.sub(r"\s*\n\s*", " ", re.sub(r"-\s*\n\s*", "", r))
         yield dw, dr
+    # a fix that copied a trailing line-wrap hyphen ("...most im-", "sue-") can't match
+    # the joined text ("...most important", "success"); drop the trailing hyphen so the
+    # stem matches as a prefix of the whole word. Length-guarded so a short stem (e.g.
+    # "hay") can't over-match a common substring elsewhere on the page.
+    wh, rh = w.rstrip(), r.rstrip()
+    if wh.endswith("-") and rh.endswith("-") and len(wh[:-1].strip()) >= 4:
+        yield wh[:-1], rh[:-1]
 
 def apply_fixes(text, fixes):
     for f in fixes:
